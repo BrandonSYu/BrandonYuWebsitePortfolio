@@ -1,0 +1,36 @@
+#!bin/sh
+
+set -e
+
+rm_conffiles_if_uninstalled() {
+    PKGNAME="$1"
+    MAXVERSION="$2"
+
+    if [ "$(dpkg-query --show --showformat='${db:Status-Status}' "$PKGNAME")" != "config-files" ]; then
+        return 0;
+    fi
+
+    pkg_version=$(dpkg-query --show --showformat='${Version}' "$PKGNAME")
+
+    if dpkg --compare-versions "$pkg_version" lt-nl "$MAXVERSION"; then
+        conffiles="$(dpkg-query --show -f='${Conffiles}' "$PKGNAME")"
+        filepaths="$(echo "$conffiles" | cut -f-2 -d' ')"
+
+        for cfile in $filepaths; do
+            if [ -f "$cfile" ]; then
+                echo "Moving obsolete conffile $cfile to $cfile.x11-back..."
+                mv -f "$cfile" "$cfile".x11-back
+            fi
+        done
+    fi
+}
+
+case "$1" in
+install|upgrade)
+    if dpkg --compare-versions "$2" lt 1:7.7+13ubuntu3.1; then
+        rm_conffiles_if_uninstalled nux-tools 4.0.8+16.04.20180613.1-0ubuntu1
+    fi
+    ;;
+esac
+
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brandon Yu Web Portfolio</title>
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                <link rel="stylesheet" href="styles.css">
+                    <body class = "works_on_smartphone">
+                    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script src="behavior.js"></script>
+</head>
+                        <header>
+                        <div class = "container">
+                        <a href="http://92.243.24.25/index.html"><img src="images/ggbridge.jpg" alt="" id="logo"></a>
+                        <div class = "centered">Brandon Yu Website Portfolio</div>
+                        </div>
+                        </header>
+                        <main>
+                            <article>
+                                <div class="w3-bar w3-border w3-light-grey">
+                                    <a href="index.html" class="w3-bar-item w3-button w3-hover-teal">About</a>
+                                    <a href="foodtrucksf.html" class="w3-bar-item w3-button w3-hover-teal">FoodTruckSFiOS</a>
+                                    <a href="pacmanai.html" class="w3-bar-item w3-button w3-hover-teal">UC Berkeley Pac-Man A.I. Part 1</a>
+                                    <a href="tweets.html" class="w3-bar-item w3-button w3-hover-teal">Tweets</a>
+                                    <a href="https://twitter.com/intent/tweet?screen_name=BrandonYu415&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @BrandonYu415</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                               <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+                               </div>
+                                <div>
+<h2>Food Truck iOS Application</h2>
+
+<h3>Design</h3>
+<p>
+Creating a App designed to find food trucks located in San Francisco based on acquired JSON data supplied by the city.
+The user can save food trucks to a favorites list making use of CoreData. A walking route and driving route based on the closest
+distance to the users current location is drawn out on the map. The user is able to look at food truck specifics, such as location and
+store hours through both map annotations and an advanced detail display.
+</p>
+<h3>Architecture/Tools</h3>
+<p>
+Languages: Swift, JSON<br>
+MVC Architecture<br>
+xCode<br>
+Cocoapods<br>
+Alamofire<br>
+JSON data<br>
+Initially used Google Maps API, but switched to the more native MapKit<br>
+Git for version control<br>
+</p>
+
+<h3>App Flow</h3>
+<img src="images/appflow.jpg" alt="FoodTruckiOS App Flow">
+<h3>Code</h3>
+<h4>Display Map</h4>
+<p>Foodtruck longitude and latitude values are acquired through acquired JSON data provided by San Francisco and displayed on the map</p>
+<img src="images/region.jpg" alt="Set Region">
+<h4>Display Markers</h4>
+<p>* Acquire coordinates from parsed JSON data<br>
+* Add each coordinate as annotation to MapView<br>
+* Register MarkerView and ClusterView to MapView<br>
+* Keep track of other food truck attributes as well
+</p>
+<h4>Map Annotation and Callout</h4>
+<p>* Separate view for map annotations<br>
+* Display food truck name and schedule<br>
+* Brings you to an advanced details view
+</p>
+<img src="images/mapanno.jpg" alt="Map Annotation and Callout">
+<h4>Map Clustering</h4>
+<p>To deal with 600+ Pins around same location<br>
+Reduce visual data clutter for better user experience
+</p>
+<img src="images/clustering.jpg" alt="Map Clustering">
+<h4>Food Truck Advanced Detail</h4>
+<p>* Displays more helpful details <br>
+* Option to bookmark a favorite food truck
+</p>
+<img src="images/foodtruckadv.jpg" alt="Food Truck Advanced Detail">
+<h4>Food Truck Bookmarks</h4>
+<p>* On app closure, data remains intact<br>
+	* UserDefaults and CoreData
+</p>
+<img src="images/foodtruckbookmarks.jpg" alt="Food Truck Bookmarks"><br>
+<img src="images/foodtruckbookmarkscode.jpg" alt="Food Truck Bookmarks Code">
+<h4>Nearby Food Truck</h4>
+<p>* Display the nearest trucks based on the user’s current location<br>
+* Shows the distance from user location to the destination food truck<br>
+* Table updates whenever device moves more than mile
+</p>
+<img src="images/foodtrucknearby.jpg" alt="Food Truck Nearby"><br>
+<img src="images/nearbylist.jpg" alt="Nearby List Code"><br>
+<img src="images/foodtrucknearbycode.jpg" alt="Food Truck Nearby Code">
+<h3>Nice to Have Features</h3>
+<p>* Search for specific food items/type of foods, maybe category based<br>
+* Expanding dataset to show more food trucks<br>
+* Make it easier to remove and edit bookmarks
+</p>
+<h3>Struggles and Difficulties</h3>
+<p>Not committing to master until stable build release (Pull Requests)<br>
+Google Map API vs MapKit<br>
+Understanding how to deal with Pod Files<br>
+Non Compatible XCode Version<br>
+Dependencies (one feature requires another to be finished first)<br>
+Simulating Walking <br>
+for testing whether map direction line updates properly<br>
+for testing whether nearby table updates properly<br>
+Constraints <br>
+Different screen sizes<br>
+</p>
+<h3>Conclusion</h3>
+<p>
+Application gave me insight to the world of mobile development. Compared to website development, mobile application development
+is more restrictive in terms of memory footprint and screen rendering. Having a responsive mobile application is crucial given
+the hardware constraints of mobile devices. Using xCode's storyboard to create UI elements made development much easier.<br> 
+
+</p>
+</div>
+                            </article>
+                            <aside>
+                                <div id="disqus_thread">
+                                <script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://http-92-243-24-25.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+                                </script>
+                                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                                </noscript>
+                            </div>
+                        </aside>
+                    </main>
+                    <footer>
+                        <p>Made by <a href="https://twitter.com/BrandonYu415" target="_blank"> Brandon Yu </a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a>
+                        </p>
+                        <p>
+                            <img src="https://www.holbertonschool.com/holberton-logo.png">
+                            </p>
+                        </footer>
+                    </body>
+                </html>

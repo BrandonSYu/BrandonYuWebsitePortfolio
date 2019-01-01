@@ -1,0 +1,9 @@
+e184ba65e57e6848897bb4187a634053  usr/lib/x86_64-linux-gnu/libcapnp-0.5.3.so
+7cc8a6bf47a240db2de6e45b1bebebd9  usr/lib/x86_64-linux-gnu/libcapnp-rpc-0.5.3.so
+dae166327a01c4b2aa6eb4c2f2e63b60  usr/lib/x86_64-linux-gnu/libcapnpc-0.5.3.so
+ef062a818b2a3f4cfb359ef95d0b0df6  usr/lib/x86_64-linux-gnu/libkj-0.5.3.so
+f593c113cfab7e2103b96b59c2983b96  usr/lib/x86_64-linux-gnu/libkj-async-0.5.3.so
+cac48e16d2fc03db6ee36451ec8250ad  usr/share/doc/libcapnp-0.5.3/README.txt
+2a5ebb7228b1b60b787e3b73da2603b6  usr/share/doc/libcapnp-0.5.3/changelog.Debian.gz
+c8b90626e1bce881c1e3a013b50cb0cc  usr/share/doc/libcapnp-0.5.3/copyright
+491be0e1e40824f6a139176bce54801f  usr/share/lintian/overrides/libcapnp-0.5.3

@@ -1,0 +1,1354 @@
+Package: borgbackup
+Description-md5: 8a56876615c13f6f25a373ef5d5c2017
+Description-en: deduplicating and compressing backup program
+ Borg is a deduplicating and compressing backup program. Optionally, it
+ also supports authenticated encryption. It was forked from the attic
+ backup program.
+ .
+ The main goal of Borg is to provide an efficient and secure way to
+ backup data. The data deduplication technique used makes Borg suitable
+ for daily backups since only the changes are stored. The authenticated
+ encryption makes it suitable for backups to not fully trusted targets.
+ .
+ It can push backups to remote repositories accessed via ssh. A client
+ pushing a backup invokes "borg serve" on the repository host. It is
+ possible to restrict the ssh key to "borg serve" using the
+ authorized_keys command= clause.
+ .
+ Please note that the server and the client should be on the same
+ version of borgbackup. Using different versions of borgbackup on
+ client and server might result in 'incompatible API version' error
+ messages and a non-working backup.
+ .
+ While there is no direct operations mode for pull-type backups, you
+ can configure the backup target in append-only mode, preventing the
+ backup source from deleting or altering previous backups.
+
+Package: borgbackup-doc
+Description-md5: 04d1acfe5fec11e4caa380114fa4d94a
+Description-en: deduplicating and compressing backup program (documentation)
+ Borg is a deduplicating and compressing backup program. Optionally, it
+ also supports authenticated encryption. It was forked from the attic
+ backup program.
+ .
+ The main goal of Borg is to provide an efficient and secure way to
+ backup data. The data deduplication technique used makes Borg suitable
+ for daily backups since only the changes are stored. The authenticated
+ encryption makes it suitable for backups to not fully trusted targets.
+ .
+ It can push backups to remote repositories accessed via ssh. A client
+ pushing a backup invokes "borg serve" on the repository host. It is
+ possible to restrict the ssh key to "borg serve" using the
+ authorized_keys command= clause.
+ .
+ This is the documentation package
+
+Package: certbot
+Description-md5: deb7e404ce1b150b59379c3f9a73ac1a
+Description-en: automatically configure HTTPS using Let's Encrypt
+ The objective of Certbot, Let's Encrypt, and the ACME (Automated
+ Certificate Management Environment) protocol is to make it possible
+ to set up an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention. This is
+ accomplished by running a certificate management agent on the web
+ server.
+ .
+ This agent is used to:
+ .
+   - Automatically prove to the Let's Encrypt CA that you control the website
+   - Obtain a browser-trusted certificate and set it up on your web server
+   - Keep track of when your certificate is going to expire, and renew it
+   - Help you revoke the certificate if that ever becomes necessary.
+ .
+ This package contains the main application, including the standalone
+ and the manual authenticators.
+
+Package: cups-ipp-utils
+Description-md5: fc53f48bcd5c06c739e45e5b8b3087d2
+Description-en: Common UNIX Printing System(tm) - IPP developer/admin utilities
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides IPP utilities for developers and system administrators
+
+Package: curtin
+Description-md5: 131b2c82b3ac98e404f8679da8cf7637
+Description-en: Library and tools for the curtin installer
+ This package provides the curtin installer.
+ .
+ Curtin is an installer that is blunt, brief, snappish, snippety and
+ unceremonious.
+
+Package: fixincludes
+Description-md5: 4eec63ec6a45894436866732b96c2698
+Description-en: Fix non-ANSI header files
+ FixIncludes was created to fix non-ANSI system header files. Many
+ system manufacturers supply proprietary headers that are not ANSI compliant.
+ The GNU compilers cannot compile non-ANSI headers. Consequently, the
+ FixIncludes shell script was written to fix the header files.
+ .
+ Not all packages with header files are installed on the system, when the
+ package is built, so we make fixincludes available at build time of other
+ packages, such that checking tools like lintian can make use of it.
+
+Package: gcc-5-hppa64-linux-gnu
+Description-md5: 0ee0959bbc343ff940f7f385554ffc51
+Description-en: GNU C compiler (cross compiler for hppa64)
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+
+Package: gcc-5-locales
+Description-md5: eb5e72cb380341d4ed2ad2d24c34f31d
+Description-en: GCC, the GNU compiler collection (native language support files)
+ Native language support for GCC. Lets GCC speak your language,
+ if translations are available.
+ .
+ Please do NOT submit bug reports in other languages than "C".
+ Always reset your language settings to use the "C" locales.
+
+Package: gcc-5-source
+Description-md5: cb00049993a8c14b73bb041c050eb8c5
+Description-en: Source of the GNU Compiler Collection
+ This package contains the sources and patches which are needed to
+ build the GNU Compiler Collection (GCC).
+
+Package: gcc-5-test-results
+Description-md5: dc68b9fb54342c9f71afbc0efcf1ade0
+Description-en: Test results for the GCC test suite
+ This package contains the test results for running the GCC test suite
+ for a post build analysis.
+
+Package: gccgo-5
+Description-md5: 58c2a4ce4d3fe6815f7a6ee86b4db16d
+Description-en: GNU Go compiler
+ This is the GNU Go compiler, which compiles Go on platforms supported
+ by the gcc compiler. It uses the gcc backend to generate optimized code.
+
+Package: gccgo-5-multilib
+Description-md5: 25e9a6929ec801c16cd933e711c7f1ed
+Description-en: GNU Go compiler (multilib support)
+ This is the GNU Go compiler, which compiles Go on platforms supported
+ by the gcc compiler.
+ .
+ This is a dependency package, depending on development packages
+ for the non-default multilib architecture(s).
+
+Package: gcj-5-source
+Description-md5: 4c55da0bb9881014d9bba36bde1b8806
+Description-en: GCJ java sources for use in IDEs like eclipse and netbeans
+ These are the java source files packaged as a zip file for use in development
+ environments like eclipse and netbeans.
+
+Package: gdc-5
+Description-md5: 864a87c3c14c54bac8e1eca97a6eb9a7
+Description-en: GNU D compiler (version 2)
+ This is the GNU D compiler, which compiles D on platforms supported by gcc.
+ It uses the gcc backend to generate optimised code.
+ .
+ This compiler supports D language version 2.
+
+Package: gdc-5-multilib
+Description-md5: 5bd997d730190f1d6151d11f184d631d
+Description-en: GNU D compiler (version 2, multilib support)
+ This is the GNU D compiler, which compiles D on platforms supported by gcc.
+ It uses the gcc backend to generate optimised code.
+ .
+ This is a dependency package, depending on development packages
+ for the non-default multilib architecture(s).
+
+Package: gnat-5
+Description-md5: 8cebde0cd6b861927a7a457cacc8851f
+Description-en: GNU Ada compiler
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ This package provides the compiler, tools and runtime library that handles
+ exceptions using the default zero-cost mechanism.
+
+Package: gnat-5-doc
+Description-md5: 8139d6afb41aa31e17dbd1884d4ab725
+Description-en: GNU Ada compiler (documentation)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ The libgnat library provides runtime components needed by most
+ applications produced with GNAT.
+ .
+ This package contains the documentation in info format.
+
+Package: gnat-5-sjlj
+Description-md5: 38183a5764143bf77935e8455d8574ce
+Description-en: GNU Ada compiler (setjump/longjump runtime library)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ This package provides an alternative runtime library that handles
+ exceptions using the setjump/longjump mechanism (as a static library
+ only).  You can install it to supplement the normal compiler.
+
+Package: gobjc++-5
+Description-md5: b9baa94c6e3efdfa23b7927008258616
+Description-en: GNU Objective-C++ compiler
+ This is the GNU Objective-C++ compiler, which compiles
+ Objective-C++ on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+
+Package: gobjc++-5-multilib
+Description-md5: 4ebddb68adf8e3d2b7023dd3d5bac0b7
+Description-en: GNU Objective-C++ compiler (multilib support)
+ This is the GNU Objective-C++ compiler, which compiles Objective-C++ on
+ platforms supported by the gcc compiler.
+ .
+ This is a dependency package, depending on development packages
+ for the non-default multilib architecture(s).
+
+Package: gobjc-5
+Description-md5: ef51de6b57526dc4a161944678606486
+Description-en: GNU Objective-C compiler
+ This is the GNU Objective-C compiler, which compiles
+ Objective-C on platforms supported by the gcc compiler. It uses the
+ gcc backend to generate optimized code.
+
+Package: gobjc-5-multilib
+Description-md5: b79f5c8e5ac0b4d1089b9028a80813f3
+Description-en: GNU Objective-C compiler (multilib support)
+ This is the GNU Objective-C compiler, which compiles Objective-C on platforms
+ supported by the gcc compiler.
+ .
+ This is a dependency package, depending on development packages
+ for the non-default multilib architecture(s).
+
+Package: letsencrypt
+Description-md5: b77c3edb2fdeaba6edecc4488cb24985
+Description-en: transitional dummy package
+ This is a transitional dummy package for the rename of letsencrypt to certbot.
+ It can safely be removed.
+
+Package: lib32go7
+Description-md5: 7174520aedfeba49e54b8c36f55b7e95
+Description-en: Runtime library for GNU Go applications (32bit)
+ Library needed for GNU Go applications linked against the
+ shared library.
+
+Package: lib32go7-dbg
+Description-md5: c72834060f6b473c88c959fce8644a48
+Description-en: Runtime library for GNU Go applications (32 bit debug symbols)
+ Library needed for GNU Go applications linked against the
+ shared library. This currently is an empty package, because the
+ library is completely unstripped.
+
+Package: libgnat-5
+Description-md5: 27cdab3b846cfe71a546e1fbdc98570c
+Description-en: runtime for applications compiled with GNAT (shared library)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ The libgnat library provides runtime components needed by most
+ applications produced with GNAT.
+ .
+ This package contains the runtime shared library.
+
+Package: libgnat-5-dbg
+Description-md5: a1f30e9b04fb19502b1c456fd0019eb1
+Description-en: runtime for applications compiled with GNAT (debugging symbols)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ The libgnat library provides runtime components needed by most
+ applications produced with GNAT.
+ .
+ This package contains the debugging symbols.
+
+Package: libgnatprj5
+Description-md5: cf808c029e0061472cc5f696126966f0
+Description-en: GNU Ada compiler Project Manager (shared library)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ GNAT uses project files to organise source and object files in large-scale
+ development efforts. The libgnatprj library exports GNAT project files
+ management for use in other packages, most notably ASIS tools (package
+ asis-programs) and GNAT Programming Studio (package gnat-gps). It is
+ licensed under the pure GPL; all programs that use it must also be
+ distributed under the GPL, or not distributed at all.
+ .
+ This package contains the runtime shared library.
+
+Package: libgnatprj5-dbg
+Description-md5: 0eabb3b5fbe5e4f083c3f0baf7b6a80b
+Description-en: GNU Ada compiler Project Manager (debugging symbols)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ GNAT uses project files to organise source and object files in large-scale
+ development efforts. The libgnatprj library exports GNAT project files
+ management for use in other packages, most notably ASIS tools (package
+ asis-programs) and GNAT Programming Studio (package gnat-gps). It is
+ licensed under the pure GPL; all programs that use it must also be
+ distributed under the GPL, or not distributed at all.
+ .
+ This package contains the debugging symbols.
+
+Package: libgnatprj5-dev
+Description-md5: ee8c8bb38216ee28da6c5f1eb6380715
+Description-en: GNU Ada compiler Project Manager (development files)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ GNAT uses project files to organise source and object files in large-scale
+ development efforts. The libgnatprj library exports GNAT project files
+ management for use in other packages, most notably ASIS tools (package
+ asis-programs) and GNAT Programming Studio (package gnat-gps). It is
+ licensed under the pure GPL; all programs that use it must also be
+ distributed under the GPL, or not distributed at all.
+ .
+ This package contains the development files and static library.
+
+Package: libgnatvsn5
+Description-md5: 75e330fcf9a585cbfe2857d4468e3c84
+Description-en: GNU Ada compiler selected components (shared library)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ The libgnatvsn library exports selected GNAT components for use in other
+ packages, most notably ASIS tools. It is licensed under the GNAT-Modified
+ GPL, allowing to link proprietary programs with it.
+ .
+ This package contains the runtime shared library.
+
+Package: libgnatvsn5-dbg
+Description-md5: 814414c51c0b951882f9da1be21702ba
+Description-en: GNU Ada compiler selected components (debugging symbols)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ The libgnatvsn library exports selected GNAT components for use in other
+ packages, most notably ASIS tools. It is licensed under the GNAT-Modified
+ GPL, allowing to link proprietary programs with it.
+ .
+ This package contains the debugging symbols.
+
+Package: libgnatvsn5-dev
+Description-md5: fa344c0d231c640dd6ef6c54f6b9640a
+Description-en: GNU Ada compiler selected components (development files)
+ GNAT is a compiler for the Ada programming language. It produces optimized
+ code on platforms supported by the GNU Compiler Collection (GCC).
+ .
+ The libgnatvsn library exports selected GNAT components for use in other
+ packages, most notably ASIS tools. It is licensed under the GNAT-Modified
+ GPL, allowing to link proprietary programs with it.
+ .
+ This package contains the development files and static library.
+
+Package: libgo7-dbg
+Description-md5: e9237330081a278c3cbccde9c5c63b3a
+Description-en: Runtime library for GNU Go applications (debug symbols)
+ Library needed for GNU Go applications linked against the
+ shared library. This currently is an empty package, because the
+ library is completely unstripped.
+
+Package: libnss-mymachines
+Description-md5: 588342105e1fdd6ff74c093651cb80cc
+Description-en: nss module to resolve hostnames for local container instances
+ nss-mymachines is a plugin for the GNU Name Service Switch (NSS) functionality
+ of the GNU C Library (glibc) providing hostname resolution for local containers
+ that are registered with systemd-machined.service(8). The container names are
+ resolved to IP addresses of the specific container, ordered by their scope.
+ .
+ Installing this package automatically adds mymachines to /etc/nsswitch.conf.
+
+Package: libnss-resolve
+Description-md5: fa2bc74d218dfae9ad286df8f31fa19f
+Description-en: nss module to resolve names via systemd-resolved
+ nss-resolve is a plugin for the GNU Name Service Switch (NSS) functionality
+ of the GNU C Library (glibc) providing DNS and LLMNR resolution to programs via
+ the systemd-resolved daemon (provided in the systemd package).
+ .
+ Installing this package automatically adds resolve to /etc/nsswitch.conf.
+
+Package: libprotobuf-java
+Description-md5: 2ac9477d01e9d2920f1793f9f58f3aa6
+Description-en: Java bindings for protocol buffers
+ Protocol buffers are a flexible, efficient, automated mechanism for
+ serializing structured data - similar to XML, but smaller, faster, and
+ simpler. You define how you want your data to be structured once, then you can
+ use special generated source code to easily write and read your structured
+ data to and from a variety of data streams and using a variety of languages.
+ You can even update your data structure without breaking deployed programs
+ that are compiled against the "old" format.
+ .
+ Google uses Protocol Buffers for almost all of its internal RPC protocols and
+ file formats.
+ .
+ This package contains the Java bindings for the protocol buffers. You will
+ need the protoc tool (in the protobuf-compiler package) to compile your
+ definition to Java classes, and then the modules in this package will allow
+ you to use those classes in your programs.
+
+Package: libsdl2-2.0-0
+Description-md5: eac74b2cbfe55d827d5e2ced34a00b0f
+Description-en: Simple DirectMedia Layer
+ SDL is a library that allows programs portable low level access to a video
+ framebuffer, audio output, mouse, and keyboard.
+ .
+ This version of SDL is compiled with X11 and Wayland graphics drivers and OSS,
+ ALSA, NAS, sndio and PulseAudio sound drivers.
+
+Package: libsdl2-dbg
+Description-md5: 784ef1eacd353c10222d88e70e5ce69a
+Description-en: Simple DirectMedia Layer debug files
+ SDL is a library that allows programs portable low level access to a video
+ framebuffer, audio output, mouse, and keyboard.
+ .
+ This package contains the debug symbols for the SDL library.
+
+Package: libsdl2-dev
+Description-md5: 9a82f59c5790721baad7ffc5f181d3d6
+Description-en: Simple DirectMedia Layer development files
+ SDL is a library that allows programs portable low level access to a video
+ framebuffer, audio output, mouse, and keyboard.
+ .
+ This package contains the files needed to compile and link programs which
+ use SDL.
+
+Package: libsdl2-doc
+Description-md5: a30e9f79cd550bfdc77322c7f6f892eb
+Description-en: Reference manual for libsdl2
+ SDL is a library that allows programs portable low level access to a video
+ framebuffer, audio output, mouse, and keyboard.
+ .
+ This package contains the reference manual and examples.
+
+Package: libx32go7
+Description-md5: 274d67a4807b2168ae6370f3e1f6a565
+Description-en: Runtime library for GNU Go applications (x32)
+ Library needed for GNU Go applications linked against the
+ shared library.
+
+Package: libx32go7-dbg
+Description-md5: ecdc36ec2c26f4d5b8faf65a52d45fa4
+Description-en: Runtime library for GNU Go applications (x32 debug symbols)
+ Library needed for GNU Go applications linked against the
+ shared library. This currently is an empty package, because the
+ library is completely unstripped.
+
+Package: linux-aws-edge
+Description-md5: e8e612af03def1f6105fcd39ec83fed3
+Description-en: Complete Linux kernel for AWS systems (dummy transitional package)
+ Transitional package for upgrades from aws-edge.
+
+Package: linux-aws-headers-4.15.0-1031
+Description-md5: e316028ad769e40117f61961ec445b96
+Description-en: Header files related to Linux kernel version 4.15.0
+ This package provides kernel header files for version 4.15.0, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-aws-headers-4.15.0-1031/debian.README.gz for details
+
+Package: linux-aws-hwe
+Description-md5: a360a2f58d38d9ba68cb893f8c81bf34
+Description-en: Complete Linux kernel for AWS systems.
+ This package will always depend on the latest complete Linux kernel available
+ for AWS systems.
+
+Package: linux-aws-hwe-tools-4.15.0-1031
+Description-md5: 22fc64c4d45c199c53e8f22009fdd21f
+Description-en: Linux kernel version specific tools for version 4.15.0-1031
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.15.0-1031 on
+ 64 bit x86.
+ You probably want to install linux-tools-4.15.0-1031-<flavour>.
+
+Package: linux-azure-edge
+Description-md5: 5d143c4091c2e7a303d314c0e24595f5
+Description-en: Complete Linux kernel for Azure systems.
+ This package will always depend on the latest complete Linux kernel available
+ for Azure systems.
+
+Package: linux-azure-edge-cloud-tools-4.18.0-1007
+Description-md5: 9ff9947eb9e668289c3adc26d892b6e5
+Description-en: Linux kernel version specific cloud tools for version 4.18.0-1007
+ This package provides the architecture dependant parts for kernel
+ version locked tools for cloud tools for version 4.18.0-1007 on
+ 64 bit x86.
+ You probably want to install linux-cloud-tools-4.18.0-1007-<flavour>.
+
+Package: linux-azure-edge-tools-4.18.0-1007
+Description-md5: 152f0c851c1d525d00575db8a88fab91
+Description-en: Linux kernel version specific tools for version 4.18.0-1007
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.18.0-1007 on
+ 64 bit x86.
+ You probably want to install linux-tools-4.18.0-1007-<flavour>.
+
+Package: linux-azure-headers-4.18.0-1007
+Description-md5: 5d04c05bf24a6c1f2eee1e5cbf2645a3
+Description-en: Header files related to Linux kernel version 4.18.0
+ This package provides kernel header files for version 4.18.0, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-azure-headers-4.18.0-1007/debian.README.gz for details
+
+Package: linux-buildinfo-4.15.0-1031-aws
+Description-md5: ec6b9a317bc4aefc4bb8618c8c2a11bc
+Description-en: Linux kernel buildinfo for version 4.15.0 on 64 bit x86 SMP
+ This package contains the Linux kernel buildinfo for version 4.15.0 on
+ 64 bit x86 SMP.
+ .
+ You likely do not want to install this package.
+
+Package: linux-buildinfo-4.18.0-1007-azure
+Description-md5: 0f0ce651de3166932e71b61cf63acd77
+Description-en: Linux kernel buildinfo for version 4.18.0 on 64 bit x86 SMP
+ This package contains the Linux kernel buildinfo for version 4.18.0 on
+ 64 bit x86 SMP.
+ .
+ You likely do not want to install this package.
+
+Package: linux-cloud-tools-4.18.0-1007-azure
+Description-md5: f76386ae8435a8414e03154d58feb898
+Description-en: Linux kernel version specific cloud tools for version 4.18.0-1007
+ This package provides the architecture dependant parts for kernel
+ version locked tools for cloud for version 4.18.0-1007 on
+ 64 bit x86.
+
+Package: linux-cloud-tools-azure-edge
+Description-md5: 996a134ced918fe9256d7b32c3a50925
+Description-en: Linux kernel versioned cloud tools for Azure systems.
+ This package will always depend on the latest Linux kernel versioned cloud
+ tools available for Azure systems.
+
+Package: linux-headers-4.15.0-1031-aws
+Description-md5: 7efb225ded3e8e647f6e8345d2375d94
+Description-en: Linux kernel headers for version 4.15.0 on 64 bit x86 SMP
+ This package provides kernel header files for version 4.15.0 on
+ 64 bit x86 SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-4.15.0-1031/debian.README.gz for details.
+
+Package: linux-headers-4.18.0-1007-azure
+Description-md5: 57603a7e190710baf68aa41d6c5ac7b6
+Description-en: Linux kernel headers for version 4.18.0 on 64 bit x86 SMP
+ This package provides kernel header files for version 4.18.0 on
+ 64 bit x86 SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-4.18.0-1007/debian.README.gz for details.
+
+Package: linux-headers-aws-hwe
+Description-md5: a7480e6794e1196fe6c4493bb10de495
+Description-en: Linux kernel headers for AWS systems.
+ This package will always depend on the latest kernel headers available
+ for AWS systems.
+
+Package: linux-headers-azure-edge
+Description-md5: eeb9ab16adc26b5a55752a82472d09ac
+Description-en: Linux kernel headers for Azure systems.
+ This package will always depend on the latest kernel headers available
+ for Azure systems.
+
+Package: linux-image-4.15.0-1031-aws
+Description-md5: faf23600882c3d906ab9424476eda056
+Description-en: Linux kernel image for version 4.15.0 on 64 bit x86 SMP
+ This package contains the Linux kernel image for version 4.15.0 on
+ 64 bit x86 SMP.
+ .
+ Supports AWS processors.
+ .
+ Geared toward Amazon Web Services (AWS) systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-aws meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-image-4.18.0-1007-azure
+Description-md5: 4f10ee54ba011a7f5b60c437e681a38d
+Description-en: Signed kernel image azure
+ A kernel image for azure.  This version of it is signed with
+ Canonical's UEFI/Opal signing key.
+
+Package: linux-image-aws-hwe
+Description-md5: f5900f8bb5fe9e4927d8cbe98b340ae1
+Description-en: Linux kernel image for AWS systems.
+ This package will always depend on the latest kernel image available
+ for AWS systems.
+
+Package: linux-image-azure-edge
+Description-md5: 59fc023c98c9e1d74aefb185eab773d3
+Description-en: Linux kernel image for Azure systems.
+ This package will always depend on the latest kernel image available
+ for Azure systems.
+
+Package: linux-image-unsigned-4.18.0-1007-azure
+Description-md5: 5a4814bc61d50ead62b396386b68ffd5
+Description-en: Linux kernel image for version 4.18.0 on 64 bit x86 SMP
+ This package contains the unsigned Linux kernel image for version 4.18.0 on
+ 64 bit x86 SMP.
+ .
+ Supports Azure processors.
+ .
+ Geared toward Azure systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-azure meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-4.15.0-1031-aws
+Description-md5: 20a13d07778ebdf4680b184206194be4
+Description-en: Linux kernel extra modules for version 4.15.0 on 64 bit x86 SMP
+ Contains the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports AWS processors.
+ .
+ Geared toward Amazon Web Services (AWS) systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-aws meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-4.18.0-1007-azure
+Description-md5: bba892c329b19d18b2dc35e36515ac96
+Description-en: Linux kernel extra modules for version 4.18.0 on 64 bit x86 SMP
+ Contains the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Azure processors.
+ .
+ Geared toward Azure systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-azure meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-extra-4.18.0-1007-azure
+Description-md5: e4b4b092ada40a9d70fa892e616ab338
+Description-en: Linux kernel extra modules for version 4.18.0 on 64 bit x86 SMP
+ This package contains the Linux kernel extra modules for version 4.18.0 on
+ 64 bit x86 SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Azure processors.
+ .
+ Geared toward Azure systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-azure meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-modules-extra-azure-edge
+Description-md5: e86fbc654b899819b491fe9eee9760a1
+Description-en: Linux kernel extra modules for Azure systems.
+ This package will always depend on the latest extra modules package
+ available for Azure systems.
+
+Package: linux-signed-azure-edge
+Description-md5: 1f20c6cb7313fa276cb34a479c42a15c
+Description-en: Complete Signed Azure Linux kernel and headers (dummy transitional package)
+ This package will always depend on the latest complete azure Linux kernel
+ and headers.  Signed with the Ubuntu EFI key.
+
+Package: linux-signed-image-azure-edge
+Description-md5: 09d9b4e6661a4033d59cdfeb8f6446a5
+Description-en: Signed Azure Linux kernel image (dummy transitional package)
+ This package will always depend on the latest azure kernel image
+ available.  Signed with the Ubuntu EFI key.
+
+Package: linux-tools-4.15.0-1031-aws
+Description-md5: 8f6abec61e55498aec3602b686cc429d
+Description-en: Linux kernel version specific tools for version 4.15.0-1031
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.15.0-1031 on
+ 64 bit x86.
+
+Package: linux-tools-4.18.0-1007-azure
+Description-md5: d7e5610b7e0643c75e5978069c1a3e60
+Description-en: Linux kernel version specific tools for version 4.18.0-1007
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.18.0-1007 on
+ 64 bit x86.
+
+Package: linux-tools-aws-hwe
+Description-md5: 1c760f9cd682d4a2ce1e4f32facd8003
+Description-en: Linux kernel versioned tools for AWS systems.
+ This package will always depend on the latest Linux kernel versioned tools
+ available for AWS systems.
+
+Package: linux-tools-azure-edge
+Description-md5: 4c6b704fa5b907a56eecc933f84b2a44
+Description-en: Linux kernel versioned tools for Azure systems.
+ This package will always depend on the latest Linux kernel versioned tools
+ available for Azure systems.
+
+Package: module-init-tools
+Description-md5: 1b0992eebd45ca5ceadc775532a4f6a5
+Description-en: transitional dummy package (module-init-tools to kmod)
+ This dummy package is provided to support the transition from
+ module-init-tools to kmod and should be removed afterwards.
+
+Package: python-acme
+Description-md5: e9984343fb79b5b38891196fe71a1b00
+Description-en: ACME protocol library for Python 2
+ This is a library used by the Let's Encrypt client for the ACME
+ (Automated Certificate Management Environment).  The ACME protocol is
+ designed as part of the Let's Encrypt project, to make it possible to
+ setup an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention.  This
+ library implements the protocol used for proving the control of a
+ domain.  This library is Python 2.
+
+Package: python-acme-doc
+Description-md5: c0e216e279369caa34b4a2cb6e59f51e
+Description-en: ACME protocol library for Python 2 - Documentation
+ This is a library used by the Let's Encrypt client for the ACME
+ (Automated Certificate Management Environment).  The ACME protocol is
+ designed as part of the Let's Encrypt project, to make it possible to
+ setup an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention.  This
+ library implements the protocol used for proving the control of a
+ domain.
+ .
+ This package provides the documentation.
+
+Package: python-certbot
+Description-md5: 85358386ec4314ac7c0c6d37555b95ff
+Description-en: main library for certbot
+ The objective of Certbot, Let's Encrypt, and the ACME (Automated
+ Certificate Management Environment) protocol is to make it possible
+ to set up an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention. This is
+ accomplished by running a certificate management agent on the web
+ server.
+ .
+ This agent is used to:
+ .
+   - Automatically prove to the Let's Encrypt CA that you control the website
+   - Obtain a browser-trusted certificate and set it up on your web server
+   - Keep track of when your certificate is going to expire, and renew it
+   - Help you revoke the certificate if that ever becomes necessary.
+ .
+ This package contains the main libraries.
+
+Package: python-certbot-apache
+Description-md5: 30ce999e68e8586fa200da41d3a2a49f
+Description-en: Apache plugin for Certbot
+ The objective of Certbot, Let's Encrypt, and the ACME (Automated
+ Certificate Management Environment) protocol is to make it possible
+ to set up an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention. This is
+ accomplished by running a certificate management agent on the web
+ server.
+ .
+ This agent is used to:
+ .
+   - Automatically prove to the Let's Encrypt CA that you control the website
+   - Obtain a browser-trusted certificate and set it up on your web server
+   - Keep track of when your certificate is going to expire, and renew it
+   - Help you revoke the certificate if that ever becomes necessary.
+ .
+ This package contains the Apache plugin to the main application.
+
+Package: python-certbot-apache-doc
+Description-md5: 6e462b02b9ab52b9c7012344365f0504
+Description-en: Apache plugin documentation for Certbot
+ The objective of Certbot, Let's Encrypt, and the ACME (Automated
+ Certificate Management Environment) protocol is to make it possible
+ to set up an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention. This is
+ accomplished by running a certificate management agent on the web
+ server.
+ .
+ This agent is used to:
+ .
+   - Automatically prove to the Let's Encrypt CA that you control the website
+   - Obtain a browser-trusted certificate and set it up on your web server
+   - Keep track of when your certificate is going to expire, and renew it
+   - Help you revoke the certificate if that ever becomes necessary.
+ .
+ This package contains the documentation for the Apache plugin.
+
+Package: python-certbot-doc
+Description-md5: c921886ee1b2b199ff3083306791f0a8
+Description-en: client documentation for certbot
+ The objective of Certbot, Let's Encrypt, and the ACME (Automated
+ Certificate Management Environment) protocol is to make it possible
+ to set up an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention. This is
+ accomplished by running a certificate management agent on the web
+ server.
+ .
+ This agent is used to:
+ .
+   - Automatically prove to the Let's Encrypt CA that you control the website
+   - Obtain a browser-trusted certificate and set it up on your web server
+   - Keep track of when your certificate is going to expire, and renew it
+   - Help you revoke the certificate if that ever becomes necessary.
+ .
+ This package contains the documentation.
+
+Package: python-certbot-nginx
+Description-md5: a4b0f37cf92adc225368ca044499723c
+Description-en: Nginx plugin for Certbot
+ The objective of Certbot, Let's Encrypt, and the ACME (Automated
+ Certificate Management Environment) protocol is to make it possible
+ to set up an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention. This is
+ accomplished by running a certificate management agent on the web
+ server.
+ .
+ This agent is used to:
+ .
+   - Automatically prove to the Let's Encrypt CA that you control the website
+   - Obtain a browser-trusted certificate and set it up on your web server
+   - Keep track of when your certificate is going to expire, and renew it
+   - Help you revoke the certificate if that ever becomes necessary.
+ .
+ This package contains the Nginx plugin to the main application.
+
+Package: python-certbot-nginx-doc
+Description-md5: 44298552b70c0afe9ea738f00ec6c778
+Description-en: Nginx plugin documentation for Certbot
+ The objective of Certbot, Let's Encrypt, and the ACME (Automated
+ Certificate Management Environment) protocol is to make it possible
+ to set up an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention. This is
+ accomplished by running a certificate management agent on the web
+ server.
+ .
+ This agent is used to:
+ .
+   - Automatically prove to the Let's Encrypt CA that you control the website
+   - Obtain a browser-trusted certificate and set it up on your web server
+   - Keep track of when your certificate is going to expire, and renew it
+   - Help you revoke the certificate if that ever becomes necessary.
+ .
+ This package contains the documentation for the Nginx plugin.
+
+Package: python-curtin
+Description-md5: 31e48f4bf426e243b1a4f94280ebcafb
+Description-en: Library and tools for curtin installer
+ This package provides python library for use by curtin.
+
+Package: python-protobuf
+Description-md5: be8d4586108d36eccf5a91b06dc55099
+Description-en: Python bindings for protocol buffers
+ Protocol buffers are a flexible, efficient, automated mechanism for
+ serializing structured data - similar to XML, but smaller, faster, and
+ simpler. You define how you want your data to be structured once, then you can
+ use special generated source code to easily write and read your structured
+ data to and from a variety of data streams and using a variety of languages.
+ You can even update your data structure without breaking deployed programs
+ that are compiled against the "old" format.
+ .
+ Google uses Protocol Buffers for almost all of its internal RPC protocols and
+ file formats.
+ .
+ This package contains the Python bindings for the protocol buffers. You will
+ need the protoc tool (in the protobuf-compiler package) to compile your
+ definition to Python classes, and then the modules in this package will allow
+ you to use those classes in your programs.
+
+Package: python-pymacaroons
+Description-md5: 7893dbac608e5203b7cfdb28d03f8f69
+Description-en: Macaroon library for Python 2
+ Macaroons, like cookies, are a form of bearer credential.  Unlike opaque
+ tokens, macaroons embed caveats that define specific authorization
+ requirements for the target service, the service that issued the root
+ macaroon and which is capable of verifying the integrity of macaroons it
+ receives.
+ .
+ Macaroons allow for delegation and attenuation of authorization.  They are
+ simple and fast to verify, and decouple authorization policy from the
+ enforcement of that policy.
+
+Package: python-pytango
+Description-md5: 5a56fd6a960d4005f20709305bd2c5a9
+Description-en: API for the TANGO control system (Python 2)
+ TANGO is an object oriented distributed control system using CORBA,
+ mainly developed by the Controls Section of the ALBA Synchrotron.
+ PyTango provides bindings for its client- and server-side C++ APIs.
+ With PyTango, you can write TANGO device servers and TANGO applications
+ (scripts, CLIs, GUIs) that access TANGO device servers in pure Python.
+ .
+ This is the Python 2 version of the package.
+
+Package: python-pytango-doc
+Description-md5: 513c95b0e43d5a33930c750538738868
+Description-en: API for the TANGO control system
+ TANGO is an object oriented distributed control system using CORBA,
+ mainly developed by the Controls Section of the ALBA Synchrotron.
+ PyTango provides bindings for its client- and server-side C++ APIs.
+ With PyTango, you can write TANGO device servers and TANGO applications
+ (scripts, CLIs, GUIs) that access TANGO device servers in pure Python.
+ .
+ This package contains the documentation for the python-pytango library.
+
+Package: python-software-properties
+Description-md5: 2404b69e069f73169a1d424cb63f1d53
+Description-en: manage the repositories that you install software from
+ This software provides an abstraction of the used apt repositories.
+ It allows you to easily manage your distribution and independent software
+ vendor software sources.
+
+Package: python3-acme
+Description-md5: 1f6a20683296d3471681d8269f592f79
+Description-en: ACME protocol library for Python 3
+ This is a library used by the Let's Encrypt client for the ACME
+ (Automated Certificate Management Environment).  The ACME protocol is
+ designed as part of the Let's Encrypt project, to make it possible to
+ setup an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention.  This
+ library implements the protocol used for proving the control of a
+ domain.  This library is Python 3.
+
+Package: python3-pymacaroons
+Description-md5: 5113c586082c8b1218ec4b6ff076abd3
+Description-en: Macaroon library for Python 3
+ Macaroons, like cookies, are a form of bearer credential.  Unlike opaque
+ tokens, macaroons embed caveats that define specific authorization
+ requirements for the target service, the service that issued the root
+ macaroon and which is capable of verifying the integrity of macaroons it
+ receives.
+ .
+ Macaroons allow for delegation and attenuation of authorization.  They are
+ simple and fast to verify, and decouple authorization policy from the
+ enforcement of that policy.
+
+Package: python3-pytango
+Description-md5: 61b09160772b50d23c891ebab80dd8ec
+Description-en: API for the TANGO control system (Python 3)
+ TANGO is an object oriented distributed control system using CORBA,
+ mainly developed by the Controls Section of the ALBA Synchrotron.
+ PyTango provides bindings for its client- and server-side C++ APIs.
+ With PyTango, you can write TANGO device servers and TANGO applications
+ (scripts, CLIs, GUIs) that access TANGO device servers in pure Python.
+ .
+ This is the Python 3 version of the package.
+
+Package: qemu
+Description-md5: 976dc9e06bc50e9bc7637e1a34042953
+Description-en: fast processor emulator
+ QEMU is a fast processor emulator: currently the package supports
+ ARM, CRIS, i386, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, SH4,
+ SPARC and x86-64 emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs. QEMU has
+ two operating modes:
+ .
+  * User mode emulation: QEMU can launch Linux processes compiled for
+    one CPU on another CPU.
+  * Full system emulation: QEMU emulates a full system, including a
+    processor and various peripherals. It enables easier testing and
+    debugging of system code. It can also be used to provide virtual
+    hosting of several virtual machines on a single server.
+ .
+ As QEMU requires no host kernel patches to run, it is very safe and
+ easy to use.
+ .
+ This package is a metapackage depending on all qemu-related packages.
+
+Package: qemu-guest-agent
+Description-md5: c2bc281a0e5a8e6c2185b336580fd595
+Description-en: Guest-side qemu-system agent
+ QEMU is a fast processor emulator: currently the package supports
+ ARM, CRIS, i386, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, SH4,
+ SPARC and x86-64 emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs.
+ .
+ This package provides a daemon (agent) to run inside qemu-system
+ guests (full system emulation).  It communicates with the host using
+ a virtio-serial channel org.qemu.guest_agent.0, and allows one to perform
+ some functions in the guest from the host, including:
+  - querying and setting guest system time
+  - performing guest filesystem sync operation
+  - initiating guest shutdown or suspend to ram
+  - accessing guest files
+  - freezing/thawing guest filesystem operations
+  - others.
+ .
+ Install this package on a system which is running as guest inside
+ qemu virtual machine.  It is not used on the host.
+
+Package: qemu-user
+Description-md5: b7a34d8d1377ca0beb573e0e2b4ce914
+Description-en: QEMU user mode emulation binaries
+ QEMU is a fast processor emulator: currently the package supports
+ ARM, CRIS, i386, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, SH4,
+ SPARC and x86-64 emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs.
+ .
+ This package provides the user mode emulation binaries. In this mode
+ QEMU can launch Linux processes compiled for one CPU on another CPU.
+ .
+ If qemu-user-binfmt package is also installed, it will register binary
+ format handlers from this qemu-user package with the kernel so it will
+ be possible to run foreign binaries directly.  However, this might not
+ be suitable for using inside foreign chroots, in which case it is
+ possible to use qemu-user-static package instead of qemu-user-binmft, --
+ qemu-user-static will register statically linked binfmt handlers instead.
+
+Package: qemu-user-binfmt
+Description-md5: b9d172841422ce933839d1a34cce7b20
+Description-en: QEMU user mode binfmt registration for qemu-user
+ QEMU is a fast processor emulator: currently the package supports
+ ARM, CRIS, i386, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, SH4,
+ SPARC and x86-64 emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs.
+ .
+ This package provides binfmt support registration for the user mode
+ emulation binaries from qemu-user.  This is an empty package, it does
+ not contain any additional files, only registration scripts which run
+ at install and remove times.
+
+Package: qemu-user-static
+Description-md5: 5d8ec17cec68244efa918fa841e2964c
+Description-en: QEMU user mode emulation binaries (static version)
+ QEMU is a fast processor emulator: currently the package supports
+ ARM, CRIS, i386, M68k (ColdFire), MicroBlaze, MIPS, PowerPC, SH4,
+ SPARC and x86-64 emulation. By using dynamic translation it achieves
+ reasonable speed while being easy to port on new host CPUs.
+ .
+ This package provides the user mode emulation binaries, built
+ statically. In this mode QEMU can launch Linux processes compiled for
+ one CPU on another CPU.
+ .
+ If binfmt-support package is installed, qemu-user-static package will
+ register binary formats which the provided emulators can handle, so
+ that it will be possible to run foreign binaries directly.
+
+Package: snapd-xdg-open
+Description-md5: ba6c49ad1a4e739a75a7e8d0fde06a77
+Description-en: Transitional package for snapd-xdg-open
+ This is a transitional dummy package. It can safely be removed.
+
+Package: software-properties-kde
+Description-md5: 16e4fabef5954c12d44cd43cdd564aa2
+Description-en: manage the repositories that you install software from (qt)
+ This software provides an abstraction of the used apt repositories.
+ It allows you to easily manage your distribution and independent software
+ vendor software sources.
+ .
+ This package contains a Qt based graphical interface.
+
+Package: systemd-container
+Description-md5: b7c71babcc98683461816fc34c8f42ba
+Description-en: systemd container/nspawn tools
+ This package provides systemd's tools for nspawn and container/VM management:
+  * systemd-nspawn
+  * systemd-machined and machinectl
+  * systemd-importd
+
+Package: systemd-coredump
+Description-md5: 149b22bdf2366b7d731957d1b710e54f
+Description-en: tools for storing and retrieving coredumps
+ This package provides systemd tools for storing and retrieving coredumps:
+  * systemd-coredump
+  * coredumpctl
+
+Package: systemd-journal-remote
+Description-md5: 6bd80842a0c96acb169877c7a6a25ff6
+Description-en: tools for sending and receiving remote journal logs
+ This package provides tools for sending and receiving remote journal logs:
+  * systemd-journal-remote
+  * systemd-journal-upload
+  * systemd-journal-gatewayd
+
+Package: ubuntu-snappy
+Description-md5: 1f317b04f78374dba7d1e14def0b7f80
+Description-en: transitional dummy package
+ This is a transitional dummy package. It can safely be removed.
+
+Package: ubuntu-snappy-cli
+Description-md5: 1f317b04f78374dba7d1e14def0b7f80
+Description-en: transitional dummy package
+ This is a transitional dummy package. It can safely be removed.
+
+Package: linux-aws-hwe-tools-4.15.0-1031
+Description-md5: 12c8060ac69fee0b21ad2a2a9536196a
+Description-en: Linux kernel version specific tools for version 4.15.0-1031
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.15.0-1031 on
+ ARMv8.
+ You probably want to install linux-tools-4.15.0-1031-<flavour>.
+
+Package: linux-buildinfo-4.15.0-1031-aws
+Description-md5: 4f01ed96492a10e6297bb9e9a0bf104c
+Description-en: Linux kernel buildinfo for version 4.15.0 on ARMv8 SMP
+ This package contains the Linux kernel buildinfo for version 4.15.0 on
+ ARMv8 SMP.
+ .
+ You likely do not want to install this package.
+
+Package: linux-headers-4.15.0-1031-aws
+Description-md5: 5df743d6523641f4cf2f4524c9a0bedc
+Description-en: Linux kernel headers for version 4.15.0 on ARMv8 SMP
+ This package provides kernel header files for version 4.15.0 on
+ ARMv8 SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-4.15.0-1031/debian.README.gz for details.
+
+Package: linux-headers-4.4.0-1106-snapdragon
+Description-md5: 3b70ac9f7f716ecd623e3251d61b3044
+Description-en: Linux kernel headers for version 4.4.0 on ARMv8 SMP
+ This package provides kernel header files for version 4.4.0 on
+ ARMv8 SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-4.4.0-1106/debian.README.gz for details.
+
+Package: linux-headers-snapdragon
+Description-md5: b91660f4ed21735e89725e56b0700976
+Description-en: Linux kernel headers for the Qualcomm Snapdragon 410c architecture.
+ This package will always depend on the latest kernel headers available
+ for ARM64 Qualcomm Snapdragon 410c systems.
+
+Package: linux-image-4.15.0-1031-aws
+Description-md5: aa63fbbf7b07eee00ba97652a9e72170
+Description-en: Linux kernel image for version 4.15.0 on ARMv8 SMP
+ This package contains the Linux kernel image for version 4.15.0 on
+ ARMv8 SMP.
+ .
+ Supports AWS processors.
+ .
+ Geared toward Amazon Web Services (AWS) systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-aws meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-image-4.4.0-1106-snapdragon
+Description-md5: ab267365f3ac6b009038c83ece50a88a
+Description-en: Linux kernel image for version 4.4.0 on ARMv8 SMP
+ This package contains the Linux kernel image for version 4.4.0 on
+ ARMv8 SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-snapdragon meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-image-snapdragon
+Description-md5: 0af4796d3c4ce8fe5783f36d3e8f3e97
+Description-en: Linux kernel image for the Qualcomm Snapdragon 410c architecture.
+ This package will always depend on the latest kernel image available
+ for ARM64 Qualcomm Snapdragon 410c systems.
+
+Package: linux-modules-4.15.0-1031-aws
+Description-md5: 2130d3024e19e4644de5e113b9a4348d
+Description-en: Linux kernel extra modules for version 4.15.0 on ARMv8 SMP
+ Contains the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports AWS processors.
+ .
+ Geared toward Amazon Web Services (AWS) systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-aws meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-snapdragon
+Description-md5: 1f9e24b14982ffe37e835f5f471daf2e
+Description-en: Complete Linux kernel for the Qualcomm Snapdragon 410c architecture.
+ This package will always depend on the latest complete Linux kernel available
+ for ARM64 Qualcomm Snapdragon 410c systems.
+
+Package: linux-snapdragon-headers-4.4.0-1106
+Description-md5: 7e105c5f0d7eba5433665f6f6c9595b3
+Description-en: Header files related to Linux kernel version 4.4.0
+ This package provides kernel header files for version 4.4.0, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-snapdragon-headers-4.4.0-1106/debian.README.gz for details
+
+Package: linux-snapdragon-tools-4.4.0-1106
+Description-md5: bfc72470d2b9a5826bbfdc91bce2a46d
+Description-en: Linux kernel version specific tools for version 4.4.0-1106
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1106 on
+ ARMv8.
+ You probabaly want to install linux-tools-<flavour> meta package.
+
+Package: linux-tools-4.15.0-1031-aws
+Description-md5: 40f8e48ef22352cc8fa012c42d15480e
+Description-en: Linux kernel version specific tools for version 4.15.0-1031
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.15.0-1031 on
+ ARMv8.
+
+Package: linux-tools-4.4.0-1106-snapdragon
+Description-md5: 9cd25fbbdd39265a7eece46651f58a6d
+Description-en: Linux kernel version specific tools for version 4.4.0-1106
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1106 on
+ ARMv8.
+
+Package: linux-tools-snapdragon
+Description-md5: 9a28fe420f7c5e03e4f3914a96d3254f
+Description-en: Linux kernel versioned Tools.
+ This package will always depend on the latest Linux kernel versioned tools
+ available for ARM64 Qualcomm Snapdragon 410c systems. The Ubuntu patches have been applied.
+
+Package: petitboot
+Description-md5: 280b7da8852eec1982897447dba6cf8f
+Description-en: ncurses version of petitboot, a kexec based bootloader
+ Petitboot is a platform independent bootloader based on the Linux kexec warm
+ reboot mechanism. Petitboot supports loading kernel and initrd image files
+ from any mountable Linux device, plus can load image files from the network
+ using TFTP, NFS, HTTP, HTTPS, and SCP. Petitboot can boot any operating
+ system supported by kexec.
+
+Package: petitboot-twin
+Description-md5: d886d16895a18d56ed4783387f3ccb96
+Description-en: Twin GUI version of petitboot, a kexec based bootloader
+ Petitboot is a platform independent bootloader based on the Linux kexec warm
+ reboot mechanism. Petitboot supports loading kernel and initrd image files
+ from any mountable Linux device, plus can load image files from the network
+ using TFTP, NFS, HTTP, HTTPS, and SCP. Petitboot can boot any operating
+ system supported by kexec.
+
+Package: agda-bin
+Description-md5: f8e26d204d9ccc3a3cfdad460ae35595
+Description-en: commandline interface to Agda
+ Agda is a dependently typed functional programming language: It has inductive
+ families, which are like Haskell's GADTs, but they can be indexed by values and
+ not just types. It also has parameterised modules, mixfix operators, Unicode
+ characters, and an interactive Emacs interface (the type checker can assist in
+ the development of your code).
+ .
+ Agda is also a proof assistant: It is an interactive system for writing and
+ checking proofs. Agda is based on intuitionistic type theory, a foundational
+ system for constructive mathematics developed by the Swedish logician Per
+ Martin-Löf. It has many similarities with other proof assistants based on
+ dependent types, such as Coq, Epigram and NuPRL.
+ .
+ This package provides a command-line program for type-checking and compiling
+ Agda programs. The program can also generate hyperlinked, highlighted HTML
+ files from Agda sources.
+
+Package: libghc-agda-dev
+Description-md5: 367dee38c949eb56c7f0325161eedb49
+Description-en: dependently typed functional programming language
+ Agda is a dependently typed functional programming language: It has inductive
+ families, which are like Haskell's GADTs, but they can be indexed by values and
+ not just types. It also has parameterised modules, mixfix operators, Unicode
+ characters, and an interactive Emacs interface (the type checker can assist in
+ the development of your code).
+ .
+ Agda is also a proof assistant: It is an interactive system for writing and
+ checking proofs. Agda is based on intuitionistic type theory, a foundational
+ system for constructive mathematics developed by the Swedish logician Per
+ Martin-Löf. It has many similarities with other proof assistants based on
+ dependent types, such as Coq, Epigram and NuPRL.
+ .
+ This package provides a library for the Haskell programming language.
+ See http://www.haskell.org/ for more information on Haskell.
+
+Package: linux-headers-4.4.0-1102-raspi2
+Description-md5: db32adc7443b33cb844be2cf7d988ba6
+Description-en: Linux kernel headers for version 4.4.0 on ARM (hard float) SMP
+ This package provides kernel header files for version 4.4.0 on
+ ARM (hard float) SMP.
+ .
+ This is for sites that want the latest kernel headers.  Please read
+ /usr/share/doc/linux-headers-4.4.0-1102/debian.README.gz for details.
+
+Package: linux-headers-raspi2
+Description-md5: 325961295b16189333c01b5cecc65ef8
+Description-en: Linux kernel headers for the BCM2709 architecture.
+ This package will always depend on the latest kernel headers available
+ for ARM BCM2709 systems.
+
+Package: linux-image-4.4.0-1102-raspi2
+Description-md5: 8f34ff87bc6dfb29b251dfd53a339b11
+Description-en: Linux kernel image for version 4.4.0 on ARM (hard float) SMP
+ This package contains the Linux kernel image for version 4.4.0 on
+ ARM (hard float) SMP.
+ .
+ Also includes the corresponding System.map file, the modules built by the
+ packager, and scripts that try to ensure that the system is not left in an
+ unbootable state after an update.
+ .
+ Supports Generic processors.
+ .
+ Geared toward desktop and server systems.
+ .
+ You likely do not want to install this package directly. Instead, install
+ the linux-raspi2 meta-package, which will ensure that upgrades work
+ correctly, and that supporting packages are also installed.
+
+Package: linux-image-raspi2
+Description-md5: 814523097d87cdb6c10b9bdee6d70059
+Description-en: Linux kernel image for the BCM2709 architecture.
+ This package will always depend on the latest kernel image available
+ for ARM BCM2709 systems.
+
+Package: linux-raspi2
+Description-md5: af1a07d43e83f239c2162c6c99131cc7
+Description-en: Complete Linux kernel for the BCM2709 architecture.
+ This package will always depend on the latest complete Linux kernel available
+ for ARM BCM2709 systems.
+
+Package: linux-raspi2-headers-4.4.0-1102
+Description-md5: b9910b28926343e836501648b31ea14a
+Description-en: Header files related to Linux kernel version 4.4.0
+ This package provides kernel header files for version 4.4.0, for sites
+ that want the latest kernel headers. Please read
+ /usr/share/doc/linux-raspi2-headers-4.4.0-1102/debian.README.gz for details
+
+Package: linux-raspi2-tools-4.4.0-1102
+Description-md5: d127807c323f54e4eed08789aa025803
+Description-en: Linux kernel version specific tools for version 4.4.0-1102
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1102 on
+ ARM (hard float).
+ You probabaly want to install the linux-tools-<flavour> meta package.
+
+Package: linux-tools-4.4.0-1102-raspi2
+Description-md5: 3e3e24795994194ab44f248f3705f6ed
+Description-en: Linux kernel version specific tools for version 4.4.0-1102
+ This package provides the architecture dependant parts for kernel
+ version locked tools (such as perf and x86_energy_perf_policy) for
+ version 4.4.0-1102 on
+ ARM (hard float).
+
+Package: linux-tools-raspi2
+Description-md5: 1dcd2a3e7720acd859349d339e6d4649
+Description-en: Linux kernel versioned Tools.
+ This package will always depend on the latest Linux kernel versioned tools
+ available for ARM BCM2709 systems. The Ubuntu patches have been applied.
+
+Package: lib64go7
+Description-md5: 07fa56d3e232224f82aa278bc1a968bd
+Description-en: Runtime library for GNU Go applications (64bit)
+ Library needed for GNU Go applications linked against the
+ shared library.
+
+Package: lib64go7-dbg
+Description-md5: 1ca0a6548ec7597551697c64085d6886
+Description-en: Runtime library for GNU Go applications (64bit debug symbols)
+ Library needed for GNU Go applications linked against the
+ shared library. This currently is an empty package, because the
+ library is completely unstripped.
+

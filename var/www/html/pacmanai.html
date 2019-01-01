@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brandon Yu Web Portfolio</title>
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                <link rel="stylesheet" href="styles.css">
+                    <body class = "works_on_smartphone">
+                    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script src="behavior.js"></script>
+                        </head>
+                        <header>
+                        <div class = "container">
+                        <a href="http://92.243.24.25/index.html"><img src="images/ggbridge.jpg" alt="" id="logo"></a>
+                        <div class = "centered">Brandon Yu Website Portfolio</div>
+                        </div>
+                        </header>
+                        <main>
+                            <article>
+                                <div class="w3-bar w3-border w3-light-grey">
+                                    <a href="index.html" class="w3-bar-item w3-button w3-hover-teal">About</a>
+                                    <a href="foodtrucksf.html" class="w3-bar-item w3-button w3-hover-teal">FoodTruckSFiOS</a>
+                                    <a href="Pac-Manai.html" class="w3-bar-item w3-button w3-hover-teal">UC Berkeley Pac-Man A.I. Part 1</a>
+                                    <a href="tweets.html" class="w3-bar-item w3-button w3-hover-teal">Tweets</a>
+                                    <a href="https://twitter.com/intent/tweet?screen_name=BrandonYu415&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @BrandonYu415</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                               <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+                               </div>
+                                <div>
+<h2>UC Berkeley Pac-Man A.I. Project Part 1</h2>
+<h3>Design</h3>
+<p>
+Part 1 of Python based project from UC Berkeley's CS188 Intro to A.I. course. http://ai.berkeley.edu/project_overview.html The focus is to use the game logic of Pac-Man
+as a means to learn fundamental artificial intelligence concepts, such as state-space search, probalisitic inference, and reinforcement learning.
+We use various multi-agent searches like A*, minimax, expectimax with alpha-beta pruning. 
+</p>
+
+<h3>Architecture/Tools Used</h3>
+<p>
+Python 2.7<br>
+Auto grader created by project graders<br>
+No external Python package required out of standard Python 2.7 distribution<br>
+</p>
+<h3> Overview/Abstract </h3>
+<p>Given a Pac-Man agent, through his maze world with various layouts, food types, and enemies solve the given search problem efficiently with properly implemented search algorithms. We are given a Pac-Man start state and need to reach the problem’s goal state using successor functions that maintain the successor state to the given state, action or direction to take, and path costs or heuristics if necessary to the search algorithm. We later develop our own Pac-Man search problem, with its own unique goal state as well as specific heuristics for the problem. </p>
+<p>Implementation of classic Pac-Man game with ghosts using minimax and expectimax searches using an evaluation function design. The evaluation function helps to estimate the value of a position to be used in various algorithms like minmax. In Pac-Man’s case, we consider his position relatives to all the food on the board, but we also consider the position of enemy ghosts, which when properly implemented should lower the value produced by the evaluation function. We will compare minimax with minimax implemented with alpha beta pruning.</p>
+<h3> Problem Statements </h3>
+<p>Implement Depth First Search (prioritizes searching the deepest node in the search tree first), Breadth First Search (prioritizes searching the shallowest nodes in search tree first), Uniform Cost Search (prioritizes searching the least cost nodes first), A* Search (prioritizes search least cost nodes, along with heuristics) algorithms given different sized mazes and search problems. Implement the corner search problem for which Pac-Man has to find the shortest path too all the corners by using your own corner heuristics. Specifically, implement a corner successor function and state space functions taking into account wall hits. Implement a consistent, and admissible food heuristics for the Food Search Problem, which is to find a path that eats all the food on the grid. </p>
+<h3>Code Snippets</h3>
+<h4>Graph Search</h4>
+<p>Given various mazes with different search problems and goal states, solve the problems using different search algorithms. Search algorithms should vary only by data structure used to maintain the fringe and explore the search tree as well as any costs or heuristic functions used in the implementation. I used a graphSearch function, with a structure similar to the given solution, as a foundation to implement all of the different search algorithms. I started by defining the key constraints of A.I and search algorithms, which are start state, goal state, successor functions, and state space tree. I started by reading through the given implementation of the searchAgents.py file. I found the built in functions isStartState(), isGoalState(), and getSuccessor() extremely useful. Then I decided how to implement the state space tree, and decided to use a fringe (also known as frontier) as a triple containing the state, list of paths/directions, and possible costs because I tried to emulate the tuple returned by getSuccessor(). While pushing new nodes to the fringe, I modified the state to be the state given by the successor, appended to the list of paths, and accumulated path costs.  </p>
+<img src="images/gsearch.jpg" alt="Graph Search" style="width:80%";>
+<h4>Depth First Search, Breadth First Search, Uniform Cost Search, A* Search</h4>
+<p>Creating the specific search algorithms, such as DFS, BFS, UCS, and A* was pretty self-explanatory after creating the graphSeach function. The only difficulty was with UCS and A* where the cost and cost + heuristics respectively had to be taken into consideration. By using a graphSearch function to be used by every search algorithm, it allowed for more clarity, reusability and functionality. The difference between every algorithm varies only by the data structure, and any costs or heuristics.
+Depth First searches adjacent nodes first until reaching the bottom of a branch before it starts backtracking again. Depth First Search uses a LIFO structure, hence the use of a Stack to pop from the fringe of exploration elements.We store the fringe in a Stack data structure and return graphSearch(problem, util.Stack) for Depth First Search result.</p>
+<img src="images/dfs.jpg" alt="Depth First Search">
+<p>Breadth First Search is an algorithm that prioritizes searching for neighbor nodes first before moving to next level neighbors. We use a Queue structure to maintain fringe exploration.</p>
+<img src="images/bfs.jpg" alt="Breadth First Search">
+<p>Uniform Cost Search is an algorithm that searches based on the most optimal cost. The minimum cumulative cost has priority; thus, we use a priority queue. I use a lambda function that is called every time a new successor is pushed to the fringe, which takes the third element of the successor i.e. cost. This is inputed into the PriorityQueueWithFunction, which will return the lowest cost path. </p>
+<img src="images/ucs.jpg" alt="Uniform Cost Search" style="width:80%";>
+<p>A* search is an algorithm that is a combination of heuristics from greedy search and cost from uniform cost search. Like UCS it uses a Priority Queue to maintain the fringe. </p>
+<img src="images/a.jpg" alt="A* Search" style="width:80%";>
+<p>For the corner search problem, we needed to implement the startState, goalState, and getSuccessor functions. I decided to set the startState the given startingPosition in the __init__ function as well as the tuples of the corners to keep reference to the corners unvisited. In my approach we start with all the corners, and when there is no more corners in the tuple we have reached the goalState, i.e len(state[1]) == 0.</p>
+<img src="images/state.jpg" alt="States" style="width:80%";>
+<p>To implement the getSuccessor function for the CornerProblem, I followed the given initial code snippet and built on its logic. We are given the starting position of Pac-Man, given action, and a corner tuple. I create the newState by checking if the new position of Pac-Man is at a corner location, and append it to the cornerTup if not. nextState is a tuple consisting of a tuple representing a position, and a cornerTup maintaining the status of unvisited corners. If the Pac-Man does not hit wall, append to successors with the nextState, action, and stepcost(incremental). </p>
+<img src="images/getsuccessor.jpg" alt="Get Successor" style="width:80%";>
+<p>To implement corner heuristics, I iterate through unvisited corners tuple as a list. I find the distance to all the corners and append to a list a tuple containing the distance to a corner along with the corner itself. After storing all of the corners into a list, I find the corner with the closest distance to Pac-Man. I remove that corner from the unvisistedCorners list, add the distance to the heuristic, and set the current position of Pac-Man to now be at that corner. The idea is to for Pac-Man to reach the closest corner first, add that distance to the heuristic value, and set Pac-Man’s position to now be at that corner, while removing that corner from the unvisitedCorners list. We do this until we have reached all the corners.</p>
+<img src="images/cornerheuristic.jpg" alt="Corner Heuristic" style="width: 80%";>
+<p>For the FoodSearch problem, we implement foodHeuristic. We start with the given foodGrid and starting Pac-Man position. I then look through all the food in the given foodList and find the mazeDistance to the respective food. I take the largest distance found between Pac-Man’s position and food as the heuristic value to return. This is because I tried to keep it consistent with the notion that when the goal state is met, heuristic value should be 0. This means that the farther away from the goalstate the larger the heuristic should be, hence why I used the largest mazeDistance found. My implementation takes quite a bit of time to produce an answer; I assume it’s because I iterate through every food on the foodGrid. </p>
+<img src="images/foodheuristic.jpg" alt="Food Heuristic" style="width: 80%";>
+</p>
+<h3>Solution Result Against Auto grader<h4>
+<img src="images/1.jpg" alt="1"><br>
+<img src="images/2.jpg" alt="2"><br>
+<img src="images/3.jpg" alt="3"><br>
+<img src="images/4.jpg" alt="4"><br>
+<img src="images/5.jpg" alt="5"><br>
+<img src="images/6.jpg" alt="6">
+<h3>Conclusion</h3>
+<p>
+The search algorithms differ only in the data structure used to store the fringe, and maintain search nodes, as well as any cost or heuristic factors. Using different search algorithms proved different search nodes expanded, paths, as well as costs. Each algorithm provided different scores, showing the different results obtained. Using heuristics depicted a more efficient result, with less cost and less search nodes expanded in all of the search problems and test layouts given. Admissible heuristics is used to further ensure the cost of the goal is never overestimated. Maintaining knowledge of start state, goal state, successor functions, and state space is important to understand. It was a bit confusing understanding the entire Pac-Man game abstract representation initially, but as I began implementing it became clearer how each intrinsic function is used and how to build upon that. From this project I was able to explore the pros and cons of each search algorithm in terms of cost, and search nodes expanded, as well as possible edge case scenarios where they proved to not be efficient. 
+</p>
+</div>
+                            </article>
+                            <aside>
+                                <div id="disqus_thread">
+                                <script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://http-92-243-24-25.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+                                </script>
+                                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                                </noscript>
+                            </div>
+                        </aside>
+                    </main>
+                    <footer>
+                        <p>Made by <a href="https://twitter.com/BrandonYu415" target="_blank"> Brandon Yu </a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a>
+                        </p>
+                        <p>
+                            <img src="https://www.holbertonschool.com/holberton-logo.png">
+                            </p>
+                        </footer>
+                    </body>
+                </html>

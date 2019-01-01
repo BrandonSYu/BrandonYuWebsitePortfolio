@@ -1,0 +1,69 @@
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: CadetBlue;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    padding-left: 30%;
+    padding-right: 30%;
+    font-size: 15px;
+}
+
+
+header {
+    background-repeat: no-repeat;
+    background-size: 500px, 500px;
+    background-position: center;
+    text-align: center;
+}
+
+#logo{
+    width: 40%;
+    height: 350px;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+p {
+  justify-content: center;
+  color: black;
+}
+
+#disqus_thread{
+    width: 100%;
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+article{
+      background-color: white;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+h4{
+    text-align: center;
+}

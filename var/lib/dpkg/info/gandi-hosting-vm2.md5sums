@@ -1,0 +1,14 @@
+0f4abd5eebf9838e3db6f29be8fbadfe  lib/udev/cpu_online
+899365c1c328b9cf0bf6f3a94bdba278  lib/udev/fake_blkid
+e63f9990b49627e2d30fe1539416dd01  lib/udev/manage_memory
+7c5f7879c3210cba21a1b4b78a8948bf  usr/share/doc/gandi-hosting-vm2/changelog.gz
+73f10cc10b6f494ae0342bc9404b9703  usr/share/doc/gandi-hosting-vm2/copyright
+7ca631b9430abbc2b9a71c1c8752a878  usr/share/gandi/bootstrap.d/01-config_swap
+e8dcc453087d8529fe9a87aecc86929a  usr/share/gandi/bootstrap.d/02-config_sysctl
+9b988b5e394a57c0e5ebd66ca6e2bb7c  usr/share/gandi/bootstrap.d/03-resize_main_disk
+675088a1fac354361c0be8b9eeb1e03c  usr/share/gandi/get_json.py
+2829528aa8d5333abdd51e02018831cb  usr/share/gandi/kvm_to_xen_migration.sh
+3962bfd5eabb93cebbcdaa1a4e8276cc  usr/share/gandi/systemd/gandi-bootstrap.service
+816804b171a09e33a3e2106e560f48f6  usr/share/gandi/systemd/gandi-config.service
+e965bef2d87677e3159ea58c778850a8  usr/share/gandi/systemd/gandi-mount.service
+7d4d617cba3697aa1e9720f274513a90  usr/share/gandi/systemd/gandi-postboot.service

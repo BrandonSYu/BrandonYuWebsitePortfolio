@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/liblwres141
+/usr/share/doc/liblwres141/copyright
+/usr/share/doc/liblwres141/changelog.Debian.gz
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/liblwres.so.141.0.3
+/usr/lib/x86_64-linux-gnu/liblwres.so.141

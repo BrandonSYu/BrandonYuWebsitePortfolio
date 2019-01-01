@@ -1,0 +1,811 @@
+Dec 20 07:01:50 localhost rsyslogd: [origin software="rsyslogd" swVersion="8.16.0" x-pid="481" x-info="http://www.rsyslog.com"] start
+Dec 20 07:01:50 localhost rsyslogd-2222: command 'KLogPermitNonKernelFacility' is currently not permitted - did you already set it via a RainerScript command (v6+ config)? [v8.16.0 try http://www.rsyslog.com/e/2222 ]
+Dec 20 07:01:50 localhost rsyslogd: rsyslogd's groupid changed to 104
+Dec 20 07:01:50 localhost rsyslogd: rsyslogd's userid changed to 102
+Dec 20 07:01:50 localhost rsyslogd-2039: Could not open output pipe '/dev/xconsole':: No such file or directory [v8.16.0 try http://www.rsyslog.com/e/2039 ]
+Dec 20 07:01:50 localhost rsyslogd-2007: action 'action 9' suspended, next retry is Thu Dec 20 07:02:20 2018 [v8.16.0 try http://www.rsyslog.com/e/2007 ]
+Dec 20 07:01:50 localhost kernel: [    0.000000] Linux version 4.11.0-14-generic (buildd@lcy01-08) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) #20~16.04.1-Ubuntu SMP Wed Aug 9 09:06:22 UTC 2017 (Ubuntu 4.11.0-14.20~16.04.1-generic 4.11.12)
+Dec 20 07:01:50 localhost kernel: [    0.000000] Command line: root=LABEL=ubuntu-xenial ro console=ttyS0 console=hvc0 nomce loglevel=5 net.ifnames=0
+Dec 20 07:01:50 localhost kernel: [    0.000000] KERNEL supported cpus:
+Dec 20 07:01:50 localhost kernel: [    0.000000]   Intel GenuineIntel
+Dec 20 07:01:50 localhost kernel: [    0.000000]   AMD AuthenticAMD
+Dec 20 07:01:50 localhost kernel: [    0.000000]   Centaur CentaurHauls
+Dec 20 07:01:50 localhost kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Dec 20 07:01:50 localhost kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Dec 20 07:01:50 localhost kernel: [    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Dec 20 07:01:50 localhost kernel: [    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Dec 20 07:01:50 localhost kernel: [    0.000000] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+Dec 20 07:01:50 localhost kernel: [    0.000000] ACPI in unprivileged domain disabled
+Dec 20 07:01:50 localhost kernel: [    0.000000] Released 0 page(s)
+Dec 20 07:01:50 localhost kernel: [    0.000000] e820: BIOS-provided physical RAM map:
+Dec 20 07:01:50 localhost kernel: [    0.000000] Xen: [mem 0x0000000000000000-0x000000000009ffff] usable
+Dec 20 07:01:50 localhost kernel: [    0.000000] Xen: [mem 0x00000000000a0000-0x00000000000fffff] reserved
+Dec 20 07:01:50 localhost kernel: [    0.000000] Xen: [mem 0x0000000000100000-0x000000000fffffff] usable
+Dec 20 07:01:50 localhost kernel: [    0.000000] NX (Execute Disable) protection: active
+Dec 20 07:01:50 localhost kernel: [    0.000000] DMI not present or invalid.
+Dec 20 07:01:50 localhost kernel: [    0.000000] Hypervisor detected: Xen
+Dec 20 07:01:50 localhost kernel: [    0.000000] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Dec 20 07:01:50 localhost kernel: [    0.000000] e820: remove [mem 0x000a0000-0x000fffff] usable
+Dec 20 07:01:50 localhost kernel: [    0.000000] e820: last_pfn = 0x10000 max_arch_pfn = 0x400000000
+Dec 20 07:01:50 localhost kernel: [    0.000000] MTRR: Disabled
+Dec 20 07:01:50 localhost kernel: [    0.000000] x86/PAT: MTRRs disabled, skipping PAT initialization too.
+Dec 20 07:01:50 localhost kernel: [    0.000000] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WC  WP  UC  UC  
+Dec 20 07:01:50 localhost kernel: [    0.000000] Scanning 1 areas for low memory corruption
+Dec 20 07:01:50 localhost kernel: [    0.000000] Base memory trampoline at [ffff88000009a000] 9a000 size 24576
+Dec 20 07:01:50 localhost kernel: [    0.000000] BRK [0x0240e000, 0x0240efff] PGTABLE
+Dec 20 07:01:50 localhost kernel: [    0.000000] RAMDISK: [mem 0x02800000-0x03333fff]
+Dec 20 07:01:50 localhost kernel: [    0.000000] NUMA turned off
+Dec 20 07:01:50 localhost kernel: [    0.000000] Faking a node at [mem 0x0000000000000000-0x000000000fffffff]
+Dec 20 07:01:50 localhost kernel: [    0.000000] NODE_DATA(0) allocated [mem 0x0ff6a000-0x0ff94fff]
+Dec 20 07:01:50 localhost kernel: [    0.000000] Zone ranges:
+Dec 20 07:01:50 localhost kernel: [    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Dec 20 07:01:50 localhost kernel: [    0.000000]   DMA32    [mem 0x0000000001000000-0x000000000fffffff]
+Dec 20 07:01:50 localhost kernel: [    0.000000]   Normal   empty
+Dec 20 07:01:50 localhost kernel: [    0.000000]   Device   empty
+Dec 20 07:01:50 localhost kernel: [    0.000000] Movable zone start for each node
+Dec 20 07:01:50 localhost kernel: [    0.000000] Early memory node ranges
+Dec 20 07:01:50 localhost kernel: [    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+Dec 20 07:01:50 localhost kernel: [    0.000000]   node   0: [mem 0x0000000000100000-0x000000000fffffff]
+Dec 20 07:01:50 localhost kernel: [    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x000000000fffffff]
+Dec 20 07:01:50 localhost kernel: [    0.000000] On node 0 totalpages: 65439
+Dec 20 07:01:50 localhost kernel: [    0.000000]   DMA zone: 64 pages used for memmap
+Dec 20 07:01:50 localhost kernel: [    0.000000]   DMA zone: 21 pages reserved
+Dec 20 07:01:50 localhost kernel: [    0.000000]   DMA zone: 3999 pages, LIFO batch:0
+Dec 20 07:01:50 localhost kernel: [    0.000000]   DMA32 zone: 960 pages used for memmap
+Dec 20 07:01:50 localhost kernel: [    0.000000]   DMA32 zone: 61440 pages, LIFO batch:15
+Dec 20 07:01:50 localhost kernel: [    0.000000] p2m virtual area at ffffc90000000000, size is 40000000
+Dec 20 07:01:50 localhost kernel: [    0.000000] Remapped 0 page(s)
+Dec 20 07:01:50 localhost kernel: [    0.000000] SFI: Simple Firmware Interface v0.81 http://simplefirmware.org
+Dec 20 07:01:50 localhost kernel: [    0.000000] smpboot: Allowing 16 CPUs, 0 hotplug CPUs
+Dec 20 07:01:50 localhost kernel: [    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Dec 20 07:01:50 localhost kernel: [    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+Dec 20 07:01:50 localhost kernel: [    0.000000] e820: [mem 0x10000000-0xffffffff] available for PCI devices
+Dec 20 07:01:50 localhost kernel: [    0.000000] Booting paravirtualized kernel on Xen
+Dec 20 07:01:50 localhost kernel: [    0.000000] Xen version: 4.11.1-pre (preserve-AD)
+Dec 20 07:01:50 localhost kernel: [    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+Dec 20 07:01:50 localhost kernel: [    0.000000] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:16 nr_cpu_ids:16 nr_node_ids:1
+Dec 20 07:01:50 localhost kernel: [    0.000000] percpu: Embedded 38 pages/cpu @ffff88000ee00000 s115672 r8192 d31784 u262144
+Dec 20 07:01:50 localhost kernel: [    0.000000] pcpu-alloc: s115672 r8192 d31784 u262144 alloc=1*2097152
+Dec 20 07:01:50 localhost kernel: [    0.000000] pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 12 13 14 15 
+Dec 20 07:01:50 localhost kernel: [    0.000000] xen: PV spinlocks enabled
+Dec 20 07:01:50 localhost kernel: [    0.000000] PV qspinlock hash table entries: 256 (order: 0, 4096 bytes)
+Dec 20 07:01:50 localhost kernel: [    0.000000] Built 1 zonelists in Node order, mobility grouping on.  Total pages: 64394
+Dec 20 07:01:50 localhost kernel: [    0.000000] Policy zone: DMA32
+Dec 20 07:01:50 localhost kernel: [    0.000000] Kernel command line: root=LABEL=ubuntu-xenial ro console=ttyS0 console=hvc0 nomce loglevel=5 net.ifnames=0
+Dec 20 07:01:50 localhost kernel: [    0.000000] PID hash table entries: 1024 (order: 1, 8192 bytes)
+Dec 20 07:01:50 localhost kernel: [    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+Dec 20 07:01:50 localhost kernel: [    0.000000] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+Dec 20 07:01:50 localhost kernel: [    0.000000] Memory: 221772K/261756K available (9145K kernel code, 1705K rwdata, 3880K rodata, 2220K init, 2232K bss, 39984K reserved, 0K cma-reserved)
+Dec 20 07:01:50 localhost kernel: [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+Dec 20 07:01:50 localhost kernel: [    0.004000] Hierarchical RCU implementation.
+Dec 20 07:01:50 localhost kernel: [    0.004000] 	Build-time adjustment of leaf fanout to 64.
+Dec 20 07:01:50 localhost kernel: [    0.004000] 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=16.
+Dec 20 07:01:50 localhost kernel: [    0.004000] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=16
+Dec 20 07:01:50 localhost kernel: [    0.004000] Using NULL legacy PIC
+Dec 20 07:01:50 localhost kernel: [    0.004000] NR_IRQS:524544 nr_irqs:272 0
+Dec 20 07:01:50 localhost kernel: [    0.004000] xen:events: Using FIFO-based ABI
+Dec 20 07:01:50 localhost kernel: [    0.004000] Console: colour dummy device 80x25
+Dec 20 07:01:50 localhost kernel: [    0.004000] console [tty0] enabled
+Dec 20 07:01:50 localhost kernel: [    0.004000] console [hvc0] enabled
+Dec 20 07:01:50 localhost kernel: [    0.004000] console [ttyS0] enabled
+Dec 20 07:01:50 localhost kernel: [    0.004000] clocksource: xen: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Dec 20 07:01:50 localhost kernel: [    0.004000] Xen: using vcpuop timer interface
+Dec 20 07:01:50 localhost kernel: [    0.004000] installing Xen timer for CPU 0
+Dec 20 07:01:50 localhost kernel: [    0.004000] tsc: Fast TSC calibration failed
+Dec 20 07:01:50 localhost kernel: [    0.004040] tsc: Unable to calibrate against PIT
+Dec 20 07:01:50 localhost kernel: [    0.004178] tsc: No reference (HPET/PMTIMER) available
+Dec 20 07:01:50 localhost kernel: [    0.004179] tsc: Detected 2200.004 MHz processor
+Dec 20 07:01:50 localhost kernel: [    0.004180] Calibrating delay loop (skipped), value calculated using timer frequency.. 4400.00 BogoMIPS (lpj=8800016)
+Dec 20 07:01:50 localhost kernel: [    0.004180] pid_max: default: 32768 minimum: 301
+Dec 20 07:01:50 localhost kernel: [    0.004679] Security Framework initialized
+Dec 20 07:01:50 localhost kernel: [    0.004682] Yama: becoming mindful.
+Dec 20 07:01:50 localhost kernel: [    0.004762] AppArmor: AppArmor initialized
+Dec 20 07:01:50 localhost kernel: [    0.004936] Dentry cache hash table entries: 32768 (order: 6, 262144 bytes)
+Dec 20 07:01:50 localhost kernel: [    0.005024] Inode-cache hash table entries: 16384 (order: 5, 131072 bytes)
+Dec 20 07:01:50 localhost kernel: [    0.005074] Mount-cache hash table entries: 512 (order: 0, 4096 bytes)
+Dec 20 07:01:50 localhost kernel: [    0.005083] Mountpoint-cache hash table entries: 512 (order: 0, 4096 bytes)
+Dec 20 07:01:50 localhost kernel: [    0.005588] CPU: Physical Processor ID: 0
+Dec 20 07:01:50 localhost kernel: [    0.005589] CPU: Processor Core ID: 0
+Dec 20 07:01:50 localhost kernel: [    0.005595] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+Dec 20 07:01:50 localhost kernel: [    0.005596] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+Dec 20 07:01:50 localhost kernel: [    0.087333] ftrace: allocating 34549 entries in 135 pages
+Dec 20 07:01:50 localhost kernel: [    0.096103] cpu 0 spinlock event irq 1
+Dec 20 07:01:50 localhost kernel: [    0.096228] smpboot: Max logical packages: 1
+Dec 20 07:01:50 localhost kernel: [    0.096235] VPMU disabled by hypervisor.
+Dec 20 07:01:50 localhost kernel: [    0.096343] Performance Events: unsupported p6 CPU model 79 no PMU driver, software events only.
+Dec 20 07:01:50 localhost kernel: [    0.097370] NMI watchdog: disabled (cpu0): hardware events not enabled
+Dec 20 07:01:50 localhost kernel: [    0.097569] NMI watchdog: Shutting down hard lockup detector on all cpus
+Dec 20 07:01:50 localhost kernel: [    0.097580] smp: Bringing up secondary CPUs ...
+Dec 20 07:01:50 localhost kernel: [    0.097691] installing Xen timer for CPU 1
+Dec 20 07:01:50 localhost kernel: [    0.097726] SMP alternatives: switching to SMP code
+Dec 20 07:01:50 localhost kernel: [    0.184002] cpu 1 spinlock event irq 13
+Dec 20 07:01:50 localhost kernel: [    0.184146] installing Xen timer for CPU 2
+Dec 20 07:01:50 localhost kernel: [    0.184491] cpu 2 spinlock event irq 20
+Dec 20 07:01:50 localhost kernel: [    0.184491] installing Xen timer for CPU 3
+Dec 20 07:01:50 localhost kernel: [    0.184491] cpu 3 spinlock event irq 27
+Dec 20 07:01:50 localhost kernel: [    0.184491] installing Xen timer for CPU 4
+Dec 20 07:01:50 localhost kernel: [    0.184491] cpu 4 spinlock event irq 34
+Dec 20 07:01:50 localhost kernel: [    0.184491] installing Xen timer for CPU 5
+Dec 20 07:01:50 localhost kernel: [    0.184491] cpu 5 spinlock event irq 41
+Dec 20 07:01:50 localhost kernel: [    0.184491] installing Xen timer for CPU 6
+Dec 20 07:01:50 localhost kernel: [    0.184491] cpu 6 spinlock event irq 48
+Dec 20 07:01:50 localhost kernel: [    0.188117] installing Xen timer for CPU 7
+Dec 20 07:01:50 localhost kernel: [    0.188416] cpu 7 spinlock event irq 55
+Dec 20 07:01:50 localhost kernel: [    0.188416] installing Xen timer for CPU 8
+Dec 20 07:01:50 localhost kernel: [    0.188416] cpu 8 spinlock event irq 62
+Dec 20 07:01:50 localhost kernel: [    0.188416] installing Xen timer for CPU 9
+Dec 20 07:01:50 localhost kernel: [    0.188416] cpu 9 spinlock event irq 69
+Dec 20 07:01:50 localhost kernel: [    0.188416] installing Xen timer for CPU 10
+Dec 20 07:01:50 localhost kernel: [    0.188417] cpu 10 spinlock event irq 76
+Dec 20 07:01:50 localhost kernel: [    0.188417] installing Xen timer for CPU 11
+Dec 20 07:01:50 localhost kernel: [    0.188463] cpu 11 spinlock event irq 83
+Dec 20 07:01:50 localhost kernel: [    0.192119] installing Xen timer for CPU 12
+Dec 20 07:01:50 localhost kernel: [    0.192383] cpu 12 spinlock event irq 90
+Dec 20 07:01:50 localhost kernel: [    0.192383] installing Xen timer for CPU 13
+Dec 20 07:01:50 localhost kernel: [    0.192407] cpu 13 spinlock event irq 97
+Dec 20 07:01:50 localhost kernel: [    0.192407] installing Xen timer for CPU 14
+Dec 20 07:01:50 localhost kernel: [    0.192422] cpu 14 spinlock event irq 104
+Dec 20 07:01:50 localhost kernel: [    0.192422] installing Xen timer for CPU 15
+Dec 20 07:01:50 localhost kernel: [    0.192440] cpu 15 spinlock event irq 111
+Dec 20 07:01:50 localhost kernel: [    0.192440] smp: Brought up 1 node, 16 CPUs
+Dec 20 07:01:50 localhost kernel: [    0.192645] sched_clock: Marking stable (192000000, 0)->(1289530889209075, -1289530697209075)
+Dec 20 07:01:50 localhost kernel: [    0.193601] devtmpfs: initialized
+Dec 20 07:01:50 localhost kernel: [    0.193652] x86/mm: Memory block size: 128MB
+Dec 20 07:01:50 localhost kernel: [    0.195232] evm: security.selinux
+Dec 20 07:01:50 localhost kernel: [    0.195233] evm: security.SMACK64
+Dec 20 07:01:50 localhost kernel: [    0.195233] evm: security.SMACK64EXEC
+Dec 20 07:01:50 localhost kernel: [    0.195234] evm: security.SMACK64TRANSMUTE
+Dec 20 07:01:50 localhost kernel: [    0.195234] evm: security.SMACK64MMAP
+Dec 20 07:01:50 localhost kernel: [    0.195235] evm: security.ima
+Dec 20 07:01:50 localhost kernel: [    0.195235] evm: security.capability
+Dec 20 07:01:50 localhost kernel: [    0.195509] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Dec 20 07:01:50 localhost kernel: [    0.195578] futex hash table entries: 4096 (order: 6, 262144 bytes)
+Dec 20 07:01:50 localhost kernel: [    0.195763] pinctrl core: initialized pinctrl subsystem
+Dec 20 07:01:50 localhost kernel: [    0.215718] RTC time: 165:165:165, date: 165/165/65
+Dec 20 07:01:50 localhost kernel: [    0.215886] NET: Registered protocol family 16
+Dec 20 07:01:50 localhost kernel: [    0.215894] xen:grant_table: Grant tables using version 1 layout
+Dec 20 07:01:50 localhost kernel: [    0.215912] Grant table initialized
+Dec 20 07:01:50 localhost kernel: [    0.329962] random: fast init done
+Dec 20 07:01:50 localhost kernel: [    0.418441] PCI: setting up Xen PCI frontend stub
+Dec 20 07:01:50 localhost kernel: [    0.418445] PCI: pci_cache_line_size set to 64 bytes
+Dec 20 07:01:50 localhost kernel: [    0.420889] ACPI: Interpreter disabled.
+Dec 20 07:01:50 localhost kernel: [    0.420899] xen:balloon: Initialising balloon driver
+Dec 20 07:01:50 localhost kernel: [    0.422542] xen:manage: Unable to read sysrq code in control/sysrq
+Dec 20 07:01:50 localhost kernel: [    0.424879] xen_balloon: Initialising balloon driver
+Dec 20 07:01:50 localhost kernel: [    0.425354] SCSI subsystem initialized
+Dec 20 07:01:50 localhost kernel: [    0.425484] libata version 3.00 loaded.
+Dec 20 07:01:50 localhost kernel: [    0.425529] vgaarb: loaded
+Dec 20 07:01:50 localhost kernel: [    0.425595] usbcore: registered new interface driver usbfs
+Dec 20 07:01:50 localhost kernel: [    0.425607] usbcore: registered new interface driver hub
+Dec 20 07:01:50 localhost kernel: [    0.425651] usbcore: registered new device driver usb
+Dec 20 07:01:50 localhost kernel: [    0.425842] dmi: Firmware registration failed.
+Dec 20 07:01:50 localhost kernel: [    0.428177] PCI: System does not support PCI
+Dec 20 07:01:50 localhost kernel: [    0.428455] PCI: System does not support PCI
+Dec 20 07:01:50 localhost kernel: [    0.428857] NetLabel: Initializing
+Dec 20 07:01:50 localhost kernel: [    0.428859] NetLabel:  domain hash size = 128
+Dec 20 07:01:50 localhost kernel: [    0.428859] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Dec 20 07:01:50 localhost kernel: [    0.428885] NetLabel:  unlabeled traffic allowed by default
+Dec 20 07:01:50 localhost kernel: [    0.429137] clocksource: Switched to clocksource xen
+Dec 20 07:01:50 localhost kernel: [    0.445826] VFS: Disk quotas dquot_6.6.0
+Dec 20 07:01:50 localhost kernel: [    0.445843] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Dec 20 07:01:50 localhost kernel: [    0.445859] hugetlbfs: disabling because there are no supported hugepage sizes
+Dec 20 07:01:50 localhost kernel: [    0.445917] AppArmor: AppArmor Filesystem Enabled
+Dec 20 07:01:50 localhost kernel: [    0.445941] pnp: PnP ACPI: disabled
+Dec 20 07:01:50 localhost kernel: [    0.447044] NET: Registered protocol family 2
+Dec 20 07:01:50 localhost kernel: [    0.447232] TCP established hash table entries: 2048 (order: 2, 16384 bytes)
+Dec 20 07:01:50 localhost kernel: [    0.447245] TCP bind hash table entries: 2048 (order: 3, 32768 bytes)
+Dec 20 07:01:50 localhost kernel: [    0.447250] TCP: Hash tables configured (established 2048 bind 2048)
+Dec 20 07:01:50 localhost kernel: [    0.447297] UDP hash table entries: 256 (order: 1, 8192 bytes)
+Dec 20 07:01:50 localhost kernel: [    0.447302] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+Dec 20 07:01:50 localhost kernel: [    0.447373] NET: Registered protocol family 1
+Dec 20 07:01:50 localhost kernel: [    0.447378] PCI: CLS 0 bytes, default 64
+Dec 20 07:01:50 localhost kernel: [    0.447412] Unpacking initramfs...
+Dec 20 07:01:50 localhost kernel: [    0.976072] Freeing initrd memory: 11472K
+Dec 20 07:01:50 localhost kernel: [    0.976170] Scanning for low memory corruption every 60 seconds
+Dec 20 07:01:50 localhost kernel: [    0.976504] audit: initializing netlink subsys (disabled)
+Dec 20 07:01:50 localhost kernel: [    0.976799] Initialise system trusted keyrings
+Dec 20 07:01:50 localhost kernel: [    0.976820] audit: type=2000 audit(1545289306.319:1): state=initialized audit_enabled=0 res=1
+Dec 20 07:01:50 localhost kernel: [    0.976830] workingset: timestamp_bits=36 max_order=16 bucket_order=0
+Dec 20 07:01:50 localhost kernel: [    0.977915] zbud: loaded
+Dec 20 07:01:50 localhost kernel: [    0.978492] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Dec 20 07:01:50 localhost kernel: [    0.978641] fuse init (API version 7.26)
+Dec 20 07:01:50 localhost kernel: [    0.980430] Key type asymmetric registered
+Dec 20 07:01:50 localhost kernel: [    0.980431] Asymmetric key parser 'x509' registered
+Dec 20 07:01:50 localhost kernel: [    0.980441] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+Dec 20 07:01:50 localhost kernel: [    0.980493] io scheduler noop registered
+Dec 20 07:01:50 localhost kernel: [    0.980493] io scheduler deadline registered
+Dec 20 07:01:50 localhost kernel: [    0.980517] io scheduler cfq registered (default)
+Dec 20 07:01:50 localhost kernel: [    0.980588] intel_idle: does not run on family 6 model 79
+Dec 20 07:01:50 localhost kernel: [    0.980890] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+Dec 20 07:01:50 localhost kernel: [    0.981717] Linux agpgart interface v0.103
+Dec 20 07:01:50 localhost kernel: [    0.983235] loop: module loaded
+Dec 20 07:01:50 localhost kernel: [    0.983236] Invalid max_queues (4), will use default max: 1.
+Dec 20 07:01:50 localhost kernel: [    1.047288] libphy: Fixed MDIO Bus: probed
+Dec 20 07:01:50 localhost kernel: [    1.047290] tun: Universal TUN/TAP device driver, 1.6
+Dec 20 07:01:50 localhost kernel: [    1.047345] PPP generic driver version 2.4.2
+Dec 20 07:01:50 localhost kernel: [    1.047378] xen_netfront: Initialising Xen virtual ethernet driver
+Dec 20 07:01:50 localhost kernel: [    1.109630] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Dec 20 07:01:50 localhost kernel: [    1.109640] ehci-pci: EHCI PCI platform driver
+Dec 20 07:01:50 localhost kernel: [    1.109653] ehci-platform: EHCI generic platform driver
+Dec 20 07:01:50 localhost kernel: [    1.109668] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Dec 20 07:01:50 localhost kernel: [    1.109671] ohci-pci: OHCI PCI platform driver
+Dec 20 07:01:50 localhost kernel: [    1.109680] ohci-platform: OHCI generic platform driver
+Dec 20 07:01:50 localhost kernel: [    1.109688] uhci_hcd: USB Universal Host Controller Interface driver
+Dec 20 07:01:50 localhost kernel: [    1.109742] i8042: PNP: No PS/2 controller found.
+Dec 20 07:01:50 localhost kernel: [    1.109743] i8042: Probing ports directly.
+Dec 20 07:01:50 localhost kernel: [    2.133681] i8042: No controller found
+Dec 20 07:01:50 localhost kernel: [    2.133698] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1fb636af529, max_idle_ns: 440795229040 ns
+Dec 20 07:01:50 localhost kernel: [    2.133802] mousedev: PS/2 mouse device common for all mice
+Dec 20 07:01:50 localhost kernel: [    2.133879] i2c /dev entries driver
+Dec 20 07:01:50 localhost kernel: [    2.133927] device-mapper: uevent: version 1.0.3
+Dec 20 07:01:50 localhost kernel: [    2.133983] device-mapper: ioctl: 4.35.0-ioctl (2016-06-23) initialised: dm-devel@redhat.com
+Dec 20 07:01:50 localhost kernel: [    2.133999] ledtrig-cpu: registered to indicate activity on CPUs
+Dec 20 07:01:50 localhost kernel: [    2.134289] NET: Registered protocol family 10
+Dec 20 07:01:50 localhost kernel: [    2.141822] Segment Routing with IPv6
+Dec 20 07:01:50 localhost kernel: [    2.141837] NET: Registered protocol family 17
+Dec 20 07:01:50 localhost kernel: [    2.141844] Key type dns_resolver registered
+Dec 20 07:01:50 localhost kernel: [    2.141845] mce: Unable to init device /dev/mcelog (rc: -5)
+Dec 20 07:01:50 localhost kernel: [    2.142185] registered taskstats version 1
+Dec 20 07:01:50 localhost kernel: [    2.142213] Loading compiled-in X.509 certificates
+Dec 20 07:01:50 localhost kernel: [    2.146327] Loaded X.509 cert 'Build time autogenerated kernel key: 72bf9ba1a0639bf715aab6b935459f3e8e4502e6'
+Dec 20 07:01:50 localhost kernel: [    2.146341] zswap: loaded using pool lzo/zbud
+Dec 20 07:01:50 localhost kernel: [    2.149898] Key type big_key registered
+Dec 20 07:01:50 localhost kernel: [    2.149900] Key type trusted registered
+Dec 20 07:01:50 localhost kernel: [    2.153402] Key type encrypted registered
+Dec 20 07:01:50 localhost kernel: [    2.153404] AppArmor: AppArmor sha1 policy hashing enabled
+Dec 20 07:01:50 localhost kernel: [    2.153406] ima: No TPM chip found, activating TPM-bypass! (rc=-19)
+Dec 20 07:01:50 localhost kernel: [    2.153422] evm: HMAC attrs: 0x1
+Dec 20 07:01:50 localhost kernel: [    2.363746] blkfront: xvda: flush diskcache: enabled; persistent grants: enabled; indirect descriptors: enabled;
+Dec 20 07:01:50 localhost kernel: [    2.384691]  xvda: xvda1
+Dec 20 07:01:50 localhost kernel: [    2.450945] blkfront: xvdz: flush diskcache: enabled; persistent grants: enabled; indirect descriptors: enabled;
+Dec 20 07:01:50 localhost kernel: [    2.569248]   Magic number: 1:252:3141
+Dec 20 07:01:50 localhost kernel: [    2.569313] hctosys: unable to open rtc device (rtc0)
+Dec 20 07:01:50 localhost kernel: [    2.569413] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+Dec 20 07:01:50 localhost kernel: [    2.569414] EDD information not available.
+Dec 20 07:01:50 localhost kernel: [    2.569464] PM: Hibernation image not present or could not be loaded.
+Dec 20 07:01:50 localhost kernel: [    2.573617] Freeing unused kernel memory: 2220K
+Dec 20 07:01:50 localhost kernel: [    2.573619] Write protecting the kernel read-only data: 14336k
+Dec 20 07:01:50 localhost kernel: [    2.597509] Freeing unused kernel memory: 1080K
+Dec 20 07:01:50 localhost kernel: [    2.597926] Freeing unused kernel memory: 216K
+Dec 20 07:01:50 localhost kernel: [    2.597934] ------------[ cut here ]------------
+Dec 20 07:01:50 localhost kernel: [    2.598262] WARNING: CPU: 0 PID: 1 at /build/linux-hwe-edge-HLHSbp/linux-hwe-edge-4.11.0/arch/x86/mm/dump_pagetables.c:235 note_page+0x5e8/0x780
+Dec 20 07:01:50 localhost kernel: [    2.599058] x86/mm: Found insecure W+X mapping at address ffff880000000000/0xffff880000000000
+Dec 20 07:01:50 localhost kernel: [    2.599589] Modules linked in:
+Dec 20 07:01:50 localhost kernel: [    2.599798] CPU: 0 PID: 1 Comm: swapper/0 Not tainted 4.11.0-14-generic #20~16.04.1-Ubuntu
+Dec 20 07:01:50 localhost kernel: [    2.600369] Call Trace:
+Dec 20 07:01:50 localhost kernel: [    2.600549]  dump_stack+0x63/0x90
+Dec 20 07:01:50 localhost kernel: [    2.600763]  __warn+0xcb/0xf0
+Dec 20 07:01:50 localhost kernel: [    2.600957]  warn_slowpath_fmt+0x5a/0x80
+Dec 20 07:01:50 localhost kernel: [    2.601211]  ? vprintk_emit+0x2d1/0x380
+Dec 20 07:01:50 localhost kernel: [    2.601456]  note_page+0x5e8/0x780
+Dec 20 07:01:50 localhost kernel: [    2.601677]  ptdump_walk_pgd_level_core+0x33f/0x480
+Dec 20 07:01:50 localhost kernel: [    2.601984]  ? 0xffffffff81000000
+Dec 20 07:01:50 localhost kernel: [    2.602199]  ptdump_walk_pgd_level_checkwx+0x17/0x20
+Dec 20 07:01:50 localhost kernel: [    2.602514]  mark_rodata_ro+0xf6/0x100
+Dec 20 07:01:50 localhost kernel: [    2.602755]  ? rest_init+0x80/0x80
+Dec 20 07:01:50 localhost kernel: [    2.602987]  kernel_init+0x2a/0x100
+Dec 20 07:01:50 localhost kernel: [    2.603213]  ret_from_fork+0x25/0x30
+Dec 20 07:01:50 localhost kernel: [    2.603465] ---[ end trace 22cade1a0443b3f7 ]---
+Dec 20 07:01:50 localhost kernel: [    2.610901] x86/mm: Checked W+X mappings: FAILED, 4602 W+X pages found.
+Dec 20 07:01:50 localhost kernel: [    3.624734] EXT4-fs (xvda1): mounted filesystem with ordered data mode. Opts: (null)
+Dec 20 07:01:50 localhost kernel: [    4.250557] EXT4-fs (xvda1): re-mounted. Opts: errors=remount-ro
+Dec 20 07:01:50 localhost systemd[1]: Started Nameserver information manager.
+Dec 20 07:01:50 localhost systemd[1]: Reached target Network (Pre).
+Dec 20 07:01:50 localhost loadkeys[328]: Loading /etc/console-setup/cached.kmap.gz
+Dec 20 07:01:50 localhost systemd[1]: Starting udev Coldplug all Devices...
+Dec 20 07:01:50 localhost systemd[1]: Starting Flush Journal to Persistent Storage...
+Dec 20 07:01:50 localhost systemd[1]: Starting Load/Save Random Seed...
+Dec 20 07:01:50 localhost systemd[1]: Starting Apply Kernel Variables...
+Dec 20 07:01:50 localhost systemd[1]: Mounting FUSE Control File System...
+Dec 20 07:01:50 localhost systemd[1]: Starting Create Static Device Nodes in /dev...
+Dec 20 07:01:50 localhost systemd[1]: Started Set console keymap.
+Dec 20 07:01:50 localhost systemd[1]: Started Load/Save Random Seed.
+Dec 20 07:01:50 localhost systemd[1]: Started Apply Kernel Variables.
+Dec 20 07:01:50 localhost systemd[1]: Started Create Static Device Nodes in /dev.
+Dec 20 07:01:50 localhost systemd[1]: Mounted FUSE Control File System.
+Dec 20 07:01:50 localhost systemd[1]: Started Flush Journal to Persistent Storage.
+Dec 20 07:01:50 localhost systemd[1]: Starting udev Kernel Device Manager...
+Dec 20 07:01:50 localhost systemd[1]: Reached target Local File Systems (Pre).
+Dec 20 07:01:50 localhost systemd[1]: Reached target Local File Systems.
+Dec 20 07:01:50 localhost systemd[1]: Starting Set console font and keymap...
+Dec 20 07:01:50 localhost systemd-udevd[384]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Dec 20 07:01:50 localhost systemd[1]: Starting Raise network interfaces...
+Dec 20 07:01:50 localhost systemd[1]: Starting Commit a transient machine-id on disk...
+Dec 20 07:01:50 localhost systemd[1]: Starting Create Volatile Files and Directories...
+Dec 20 07:01:50 localhost systemd[1]: Started udev Kernel Device Manager.
+Dec 20 07:01:50 localhost systemd-tmpfiles[396]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Dec 20 07:01:50 localhost systemd[1]: Started udev Coldplug all Devices.
+Dec 20 07:01:50 localhost systemd[1]: Started Commit a transient machine-id on disk.
+Dec 20 07:01:50 localhost systemd[1]: Started Create Volatile Files and Directories.
+Dec 20 07:01:50 localhost systemd[1]: Starting Network Time Synchronization...
+Dec 20 07:01:50 localhost systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+Dec 20 07:01:50 localhost systemd[1]: Started Update UTMP about System Boot/Shutdown.
+Dec 20 07:01:50 localhost systemd[1]: Started Network Time Synchronization.
+Dec 20 07:01:50 localhost systemd[1]: Reached target System Time Synchronized.
+Dec 20 07:01:50 localhost systemd[1]: Reached target System Initialization.
+Dec 20 07:01:50 localhost systemd[1]: Started ACPI Events Check.
+Dec 20 07:01:50 localhost systemd[1]: Reached target Paths.
+Dec 20 07:01:50 localhost systemd[1]: Listening on ACPID Listen Socket.
+Dec 20 07:01:50 localhost systemd[1]: Started Daily Cleanup of Temporary Directories.
+Dec 20 07:01:50 localhost systemd[1]: Listening on D-Bus System Message Bus Socket.
+Dec 20 07:01:50 localhost systemd[1]: Reached target Sockets.
+Dec 20 07:01:50 localhost systemd[1]: Reached target Basic System.
+Dec 20 07:01:50 localhost systemd[1]: Starting Login Service...
+Dec 20 07:01:50 localhost systemd[1]: Starting Permit User Sessions...
+Dec 20 07:01:50 localhost systemd[1]: Starting LSB: Set the CPU Frequency Scaling governor to "ondemand"...
+Dec 20 07:01:50 localhost systemd[1]: Starting LSB: Record successful boot for GRUB...
+Dec 20 07:01:50 localhost systemd[1]: Started D-Bus System Message Bus.
+Dec 20 07:01:50 localhost dbus[465]: [system] AppArmor D-Bus mediation is enabled
+Dec 20 07:01:50 localhost dbus[465]: [system] Successfully activated service 'org.freedesktop.systemd1'
+Dec 20 07:01:50 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:01:50 localhost systemd[1]: Starting System Logging Service...
+Dec 20 07:01:50 localhost acpid: cannot open input layer
+Dec 20 07:01:50 localhost systemd[1]: Starting Gandi-bootstrap early setup the system...
+Dec 20 07:01:50 localhost acpid: starting up with netlink and the input layer
+Dec 20 07:01:50 localhost systemd[1]: Starting LSB: daemon to balance interrupts for SMP systems...
+Dec 20 07:01:50 localhost systemd[1]: Started System Logging Service.
+Dec 20 07:01:50 localhost systemd[1]: Started Permit User Sessions.
+Dec 20 07:01:50 localhost acpid: 9 rules loaded
+Dec 20 07:01:50 localhost acpid: waiting for events: event logging is off
+Dec 20 07:01:50 localhost systemd[1]: Started LSB: Set the CPU Frequency Scaling governor to "ondemand".
+Dec 20 07:01:50 localhost irqbalance[491]:  * Starting SMP IRQ Balancer: irqbalance
+Dec 20 07:01:50 localhost systemd[1]: Started LSB: Record successful boot for GRUB.
+Dec 20 07:01:50 localhost systemd[1]: Started Login Service.
+Dec 20 07:01:50 localhost /usr/sbin/irqbalance: Balancing is ineffective on systems with a single cpu.  Shutting down
+Dec 20 07:01:50 localhost systemd[1]: Starting Set console scheme...
+Dec 20 07:01:50 localhost irqbalance[491]:    ...done.
+Dec 20 07:01:50 localhost systemd[1]: Started LSB: daemon to balance interrupts for SMP systems.
+Dec 20 07:01:50 localhost systemd[1]: Started Set console scheme.
+Dec 20 07:01:50 localhost systemd[1]: Started Raise network interfaces.
+Dec 20 07:01:50 localhost systemd[1]: Reached target Network.
+Dec 20 07:01:50 localhost systemd[1]: Reached target Network is Online.
+Dec 20 07:01:50 localhost systemd[1]: Started Daily apt download activities.
+Dec 20 07:01:50 localhost systemd[1]: Started Daily apt upgrade and clean activities.
+Dec 20 07:01:50 localhost systemd[1]: Reached target Timers.
+Dec 20 07:01:50 localhost systemd[1]: Starting OpenBSD Secure Shell server...
+Dec 20 07:01:50 localhost systemd[1]: Starting /etc/rc.local Compatibility...
+Dec 20 07:01:50 localhost systemd[1]: Started /etc/rc.local Compatibility.
+Dec 20 07:01:50 localhost sshd[566]: Could not load host key: /etc/ssh/ssh_host_rsa_key
+Dec 20 07:01:50 localhost sshd[566]: Could not load host key: /etc/ssh/ssh_host_dsa_key
+Dec 20 07:01:50 localhost sshd[566]: Could not load host key: /etc/ssh/ssh_host_ecdsa_key
+Dec 20 07:01:50 localhost sshd[566]: Could not load host key: /etc/ssh/ssh_host_ed25519_key
+Dec 20 07:01:50 localhost systemd[1]: Started OpenBSD Secure Shell server.
+Dec 20 07:01:50 localhost systemd[1]: Started Set console font and keymap.
+Dec 20 07:01:50 localhost systemd[1]: Created slice system-getty.slice.
+Dec 20 07:01:50 localhost systemd[1]: Started Getty on tty1.
+Dec 20 07:01:50 localhost systemd[1]: Stopped Network Name Resolution.
+Dec 20 07:01:50 localhost systemd[1]: Starting Network Name Resolution...
+Dec 20 07:01:50 localhost kernel: [    5.328140] AVX2 version of gcm_enc/dec engaged.
+Dec 20 07:01:50 localhost kernel: [    5.328141] AES CTR mode by8 optimization enabled
+Dec 20 07:01:50 localhost systemd-resolved[582]: Positive Trust Anchors:
+Dec 20 07:01:50 localhost systemd-resolved[582]: . IN DS    19036 8 2 49aac11d7b6f6446702e54a1607371607a1a41855200fd2ce1cdde32f24e8fb5
+Dec 20 07:01:50 localhost systemd-resolved[582]: Negative trust anchors: 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 168.192.in-addr.arpa corp home internal intranet lan local private test
+Dec 20 07:01:50 localhost systemd-resolved[582]: Defaulting to hostname 'linux'.
+Dec 20 07:01:50 localhost systemd[1]: Started Network Name Resolution.
+Dec 20 07:01:50 localhost systemd-resolved[582]: System hostname changed to 'production-edcc9031'.
+Dec 20 07:01:50 localhost systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Dec 20 07:01:50 localhost systemd[1]: Found device /dev/hvc0.
+Dec 20 07:01:50 localhost systemd[1]: Started Serial Getty on hvc0.
+Dec 20 07:01:50 localhost systemd[1]: Reached target Login Prompts.
+Dec 20 07:01:50 localhost systemd[1]: Reloading OpenBSD Secure Shell server.
+Dec 20 07:01:50 localhost systemd[1]: Reloaded OpenBSD Secure Shell server.
+Dec 20 07:01:50 localhost sshd[566]: Could not load host key: /etc/ssh/ssh_host_rsa_key
+Dec 20 07:01:50 localhost sshd[566]: Could not load host key: /etc/ssh/ssh_host_dsa_key
+Dec 20 07:01:50 localhost sshd[566]: Could not load host key: /etc/ssh/ssh_host_ecdsa_key
+Dec 20 07:01:50 localhost sshd[566]: Could not load host key: /etc/ssh/ssh_host_ed25519_key
+Dec 20 07:01:50 localhost systemd[1]: Started ifup for eth0.
+Dec 20 07:01:50 localhost sh[679]: ifup: interface eth0 already configured
+Dec 20 07:01:51 localhost systemd[1]: Stopping OpenBSD Secure Shell server...
+Dec 20 07:01:51 localhost systemd[1]: Stopped OpenBSD Secure Shell server.
+Dec 20 07:01:51 localhost systemd[1]: Starting OpenBSD Secure Shell server...
+Dec 20 07:01:51 localhost sshd[701]: Could not load host key: /etc/ssh/ssh_host_rsa_key
+Dec 20 07:01:51 localhost sshd[701]: Could not load host key: /etc/ssh/ssh_host_dsa_key
+Dec 20 07:01:51 localhost sshd[701]: Could not load host key: /etc/ssh/ssh_host_ecdsa_key
+Dec 20 07:01:51 localhost sshd[701]: Could not load host key: /etc/ssh/ssh_host_ed25519_key
+Dec 20 07:01:51 localhost systemd[1]: Started OpenBSD Secure Shell server.
+Dec 20 07:01:51 localhost systemd[1]: Found device /sys/subsystem/net/devices/eth0.
+Dec 20 07:01:51 localhost gandi: /dev/xvdz: does not contain an ext2/3/4 filesystem.             We simply mount it as is.
+Dec 20 07:01:51 localhost gandi: /dev/xvdz: ok to mount, going on
+Dec 20 07:01:51 localhost gandi-bootstrap[485]: <function create_module_dir at 0x7fd94898e140> took 3.40938568115e-05
+Dec 20 07:01:51 localhost gandi-bootstrap[485]: <function resolver_setup at 0x7fd9489958c0> took 0.0767648220062
+Dec 20 07:01:51 localhost gandi-bootstrap[485]: <function hostname_setup at 0x7fd948995f50> took 0.00871300697327
+Dec 20 07:01:51 localhost gandi-bootstrap[485]: <function network_setup at 0x7fd948995c08> took 0.00991082191467
+Dec 20 07:01:51 localhost gandi-bootstrap[485]: <function network_enable at 0x7fd948995cf8> took 0.352625131607
+Dec 20 07:01:51 localhost gandi-bootstrap[485]: <function add_user at 0x7fd948995500> took 0.234641075134
+Dec 20 07:01:51 localhost gandi-bootstrap[485]: <function set_password at 0x7fd9489955f0> took 0.000260829925537
+Dec 20 07:01:51 localhost gandi-bootstrap[485]: <function set_password at 0x7fd9489955f0> took 0.000137090682983
+Dec 20 07:01:51 localhost gandi: call shell hook in post add [/etc/gandi/hooks//post-disk-attach /dev/xvdz None /srv/xvdz]:  stderr=
+Dec 20 07:01:51 localhost kernel: [    6.041225] Adding 262140k swap on /dev/xvdz.  Priority:-1 extents:1 across:262140k SSFS
+Dec 20 07:01:51 localhost gandi: 01-config_swap executed correctly.
+Dec 20 07:01:51 localhost gandi: 02-config_sysctl executed correctly.
+Dec 20 07:01:52 localhost gandi: Warning: The kernel is still using the old partition table.
+Dec 20 07:01:52 localhost gandi: The new table will be used at the next reboot or after you
+Dec 20 07:01:52 localhost gandi: run partprobe(8) or kpartx(8)
+Dec 20 07:01:52 localhost gandi: The operation has completed successfully.
+Dec 20 07:01:52 localhost gandi: resize2fs 1.42.13 (17-May-2015)
+Dec 20 07:01:52 localhost gandi: The filesystem is already 786171 (4k) blocks long.  Nothing to do!
+Dec 20 07:01:52 localhost gandi: 
+Dec 20 07:01:52 localhost gandi: 03-resize_main_disk executed correctly.
+Dec 20 07:01:52 localhost systemd[1]: Started Gandi-bootstrap early setup the system.
+Dec 20 07:01:52 localhost systemd[1]: Starting Gandi-config configures network, hostname and else on your VM at boot...
+Dec 20 07:01:52 localhost gandi: 01-config_console executed correctly.
+Dec 20 07:01:52 localhost gandi: 02-config_system_file executed correctly.
+Dec 20 07:01:52 localhost gandi: 03-vm-fix-cron executed correctly.
+Dec 20 07:01:52 localhost gandi: 07-config_timezone executed correctly.
+Dec 20 07:01:53 localhost gandi-config[794]: Creating SSH2 RSA key; this may take some time ...
+Dec 20 07:01:53 localhost gandi-config[794]: 2048 SHA256:gfnEzmMKLJ7NLvwTW0VW4QrTke99RgWmG5oPQjt2bSw root@production-edcc9031 (RSA)
+Dec 20 07:01:53 localhost gandi-config[794]: Creating SSH2 DSA key; this may take some time ...
+Dec 20 07:01:53 localhost gandi-config[794]: 1024 SHA256:kqBGUKH8mf26QEQDvloMHp+8hwcV49QsRV1ENJMkm58 root@production-edcc9031 (DSA)
+Dec 20 07:01:53 localhost gandi-config[794]: Creating SSH2 ECDSA key; this may take some time ...
+Dec 20 07:01:53 localhost gandi-config[794]: 256 SHA256:DvB2dCenf7AMwCTViShwGVBCXUSv7hNaZlamTiu1lGE root@production-edcc9031 (ECDSA)
+Dec 20 07:01:53 localhost gandi-config[794]: Creating SSH2 ED25519 key; this may take some time ...
+Dec 20 07:01:53 localhost gandi-config[794]: 256 SHA256:NUxWo0U4dq0WB0QbNZh/kI144gtfETpUkwykxCqoR4E root@production-edcc9031 (ED25519)
+Dec 20 07:01:53 localhost gandi: /dev/xvda: already mounted on the system.
+Dec 20 07:01:53 localhost gandi: /dev/xvda1: already mounted on the system.
+Dec 20 07:01:53 localhost systemd[1]: Reloading.
+Dec 20 07:01:54 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:01:54 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:01:54 localhost systemd[1]: Reloading.
+Dec 20 07:01:54 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:01:54 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:01:54 localhost systemd[1]: Stopping OpenBSD Secure Shell server...
+Dec 20 07:01:54 localhost systemd[1]: Stopped OpenBSD Secure Shell server.
+Dec 20 07:01:54 localhost systemd[1]: Starting OpenBSD Secure Shell server...
+Dec 20 07:01:54 localhost systemd[1]: Started OpenBSD Secure Shell server.
+Dec 20 07:01:54 localhost gandi: 11-config_ssh executed correctly.
+Dec 20 07:01:54 localhost gandi: 13-config_motd executed correctly.
+Dec 20 07:01:54 localhost gandi: Setting the max count and time for /dev/xvda1
+Dec 20 07:01:54 localhost gandi: 16-vm-fix-ext3 executed correctly.
+Dec 20 07:01:54 localhost systemd[1]: Started Gandi-config configures network, hostname and else on your VM at boot.
+Dec 20 07:01:54 localhost systemd[1]: Starting Gandi-mount mounts the virtual disks with udev at boot...
+Dec 20 07:01:54 localhost systemd[1]: Starting Gandi-postboot start customer setup script...
+Dec 20 07:01:54 localhost systemd[1]: Started Gandi-postboot start customer setup script.
+Dec 20 07:01:54 localhost gandi: /dev/xvda1: already mounted on the system.
+Dec 20 07:01:57 localhost gandi: /dev/xvda: already mounted on the system.
+Dec 20 07:01:57 localhost gandi: /dev/xvda1: already mounted on the system.
+Dec 20 07:01:57 localhost gandi-mount[1006]: Starting gandi-mount:  * ok
+Dec 20 07:01:57 localhost systemd[1]: Started Gandi-mount mounts the virtual disks with udev at boot.
+Dec 20 07:01:57 localhost systemd[1]: Reached target Multi-User System.
+Dec 20 07:01:57 localhost systemd[1]: Reached target Graphical Interface.
+Dec 20 07:01:57 localhost systemd[1]: Starting Update UTMP about System Runlevel Changes...
+Dec 20 07:01:57 localhost systemd[1]: Started Update UTMP about System Runlevel Changes.
+Dec 20 07:01:57 localhost systemd[1]: Startup finished in 3.866s (kernel) + 8.658s (userspace) = 12.524s.
+Dec 20 07:02:03 localhost systemd[1]: Stopping OpenBSD Secure Shell server...
+Dec 20 07:02:03 localhost systemd[1]: Stopped OpenBSD Secure Shell server.
+Dec 20 07:02:03 localhost systemd[1]: Starting OpenBSD Secure Shell server...
+Dec 20 07:02:03 localhost systemd[1]: Started OpenBSD Secure Shell server.
+Dec 20 07:02:05 localhost kernel: [   20.409168] random: crng init done
+Dec 20 07:02:20 localhost systemd-timesyncd[442]: Synchronized to time server [2001:67c:1560:8003::c8]:123 (ntp.ubuntu.com).
+Dec 20 07:10:28 localhost systemd[1]: Reloading.
+Dec 20 07:10:28 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:10:28 localhost systemd[1]: Reloading.
+Dec 20 07:10:28 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:10:28 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:10:28 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:10:30 localhost systemd[1]: Reloading.
+Dec 20 07:10:30 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:10:30 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:10:30 localhost systemd[1]: Reloading.
+Dec 20 07:10:30 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:10:30 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:10:30 localhost systemd[1]: Reloading.
+Dec 20 07:10:30 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:10:30 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:10:43 localhost systemd[1]: Stopped Daily apt upgrade and clean activities.
+Dec 20 07:10:43 localhost systemd[1]: Stopped Daily apt download activities.
+Dec 20 07:10:44 localhost systemd[1]: Reloading.
+Dec 20 07:10:44 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:10:44 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:10:46 localhost systemd[1]: Reloading.
+Dec 20 07:10:47 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:10:47 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:10:47 localhost systemd[1]: Started Daily apt upgrade and clean activities.
+Dec 20 07:10:47 localhost systemd[1]: Started Daily apt download activities.
+Dec 20 07:10:53 localhost systemd[1]: Reloading.
+Dec 20 07:10:53 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:10:53 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:10:54 localhost dbus[465]: [system] Reloaded configuration
+Dec 20 07:10:57 localhost dbus[465]: message repeated 27 times: [ [system] Reloaded configuration]
+Dec 20 07:10:57 localhost systemd[1]: Reloading.
+Dec 20 07:10:57 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:10:57 localhost systemd[1]: Reloading.
+Dec 20 07:10:57 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:10:57 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:10:57 localhost systemd[1]: Reloading.
+Dec 20 07:10:57 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:10:57 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:10:57 localhost systemd[1]: Reexecuting.
+Dec 20 07:10:58 localhost kernel: [  552.514011] systemd: 32 output lines suppressed due to ratelimiting
+Dec 20 07:10:58 localhost systemd[1]: systemd 229 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN)
+Dec 20 07:10:58 localhost systemd[1]: Detected virtualization xen.
+Dec 20 07:10:58 localhost systemd[1]: Detected architecture x86-64.
+Dec 20 07:10:58 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:10:58 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:10:58 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:10:58 localhost systemd[1]: Stopping Network Name Resolution...
+Dec 20 07:10:58 localhost systemd[1]: Stopped Network Name Resolution.
+Dec 20 07:10:58 localhost systemd[1]: Starting Network Name Resolution...
+Dec 20 07:10:58 localhost systemd-resolved[7759]: Positive Trust Anchors:
+Dec 20 07:10:58 localhost systemd-resolved[7759]: . IN DS    19036 8 2 49aac11d7b6f6446702e54a1607371607a1a41855200fd2ce1cdde32f24e8fb5
+Dec 20 07:10:58 localhost systemd-resolved[7759]: Negative trust anchors: 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 168.192.in-addr.arpa corp home internal intranet lan local private test
+Dec 20 07:10:58 localhost systemd-resolved[7759]: Using system hostname 'production-edcc9031'.
+Dec 20 07:10:58 localhost systemd[1]: Started Network Name Resolution.
+Dec 20 07:10:58 localhost systemd[1]: Stopping Network Time Synchronization...
+Dec 20 07:10:58 localhost systemd[1]: Stopped Network Time Synchronization.
+Dec 20 07:10:58 localhost systemd[1]: Starting Network Time Synchronization...
+Dec 20 07:10:58 localhost systemd[1]: Started Network Time Synchronization.
+Dec 20 07:10:58 localhost systemd[1]: Started Trigger resolvconf update for networkd DNS.
+Dec 20 07:10:58 localhost systemd-timesyncd[7765]: Synchronized to time server [2001:67c:1560:8003::c7]:123 (ntp.ubuntu.com).
+Dec 20 07:10:58 localhost systemd[1]: Reloading.
+Dec 20 07:10:58 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:10:59 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:10:59 localhost systemd[1]: Reloading.
+Dec 20 07:10:59 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:10:59 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:01 localhost systemd[1]: Reloading.
+Dec 20 07:11:01 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:01 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:02 localhost systemd[1]: Reloading.
+Dec 20 07:11:02 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:02 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:03 localhost systemd[1]: Reloading.
+Dec 20 07:11:03 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:03 localhost systemd[1]: Reloading.
+Dec 20 07:11:03 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:03 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:03 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:05 localhost systemd[1]: Reloading.
+Dec 20 07:11:06 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:06 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:16 localhost systemd[1]: Reloading.
+Dec 20 07:11:16 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:16 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:16 localhost systemd[1]: Stopping LSB: Record successful boot for GRUB...
+Dec 20 07:11:16 localhost systemd[1]: Stopped LSB: Record successful boot for GRUB.
+Dec 20 07:11:17 localhost systemd[1]: Reloading.
+Dec 20 07:11:17 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:17 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:18 localhost systemd[1]: Reloading.
+Dec 20 07:11:18 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:18 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:23 localhost systemd[1]: Reloading.
+Dec 20 07:11:23 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:23 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:24 localhost systemd[1]: Reloading.
+Dec 20 07:11:24 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:24 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:24 localhost systemd[1]: Reloading.
+Dec 20 07:11:24 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:24 localhost systemd[1]: Reloading.
+Dec 20 07:11:24 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:24 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:24 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:26 localhost systemd[1]: Reloading.
+Dec 20 07:11:26 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:26 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:30 localhost systemd[1]: Reloading.
+Dec 20 07:11:30 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:31 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:33 localhost systemd[1]: Reloading.
+Dec 20 07:11:34 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:34 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:37 localhost systemd[1]: Reloading.
+Dec 20 07:11:37 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:37 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:37 localhost systemd[1]: Reloading.
+Dec 20 07:11:38 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:38 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:38 localhost systemd[1]: Reloading.
+Dec 20 07:11:38 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:38 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:38 localhost systemd[1]: Reloading.
+Dec 20 07:11:38 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:39 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:39 localhost systemd[1]: Stopping udev Kernel Device Manager...
+Dec 20 07:11:39 localhost systemd[1]: Stopped udev Kernel Device Manager.
+Dec 20 07:11:39 localhost systemd[1]: Starting udev Kernel Device Manager...
+Dec 20 07:11:39 localhost systemd-udevd[13607]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Dec 20 07:11:39 localhost systemd[1]: Started udev Kernel Device Manager.
+Dec 20 07:11:39 localhost systemd[1]: Reloading.
+Dec 20 07:11:39 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:39 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:39 localhost systemd[1]: Reloading.
+Dec 20 07:11:39 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:39 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:44 localhost systemd[1]: Reloading.
+Dec 20 07:11:44 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:44 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:44 localhost systemd[1]: Reloading.
+Dec 20 07:11:44 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:44 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:44 localhost systemd[1]: Starting LSB: Record successful boot for GRUB...
+Dec 20 07:11:44 localhost systemd[1]: Started LSB: Record successful boot for GRUB.
+Dec 20 07:11:47 localhost systemd[1]: Reloading.
+Dec 20 07:11:47 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:47 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:49 localhost systemd[1]: Reloading.
+Dec 20 07:11:49 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:49 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:56 localhost systemd[1]: Reloading.
+Dec 20 07:11:56 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:56 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:56 localhost systemd[1]: Reloading.
+Dec 20 07:11:57 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:57 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:57 localhost systemd[1]: Stopping OpenBSD Secure Shell server...
+Dec 20 07:11:57 localhost systemd[1]: Stopped OpenBSD Secure Shell server.
+Dec 20 07:11:57 localhost systemd[1]: Starting OpenBSD Secure Shell server...
+Dec 20 07:11:57 localhost systemd[1]: Started OpenBSD Secure Shell server.
+Dec 20 07:11:57 localhost systemd[1]: Reloading.
+Dec 20 07:11:57 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:57 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:11:57 localhost systemd[1]: Reloading.
+Dec 20 07:11:57 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:11:57 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:12:48 localhost systemd[1]: Reloading.
+Dec 20 07:12:48 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:12:48 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:12:50 localhost systemd[1]: Reloading.
+Dec 20 07:12:50 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:12:50 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:12:50 localhost systemd[1]: Reloading.
+Dec 20 07:12:50 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:12:50 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:12:50 localhost systemd[1]: Reloading.
+Dec 20 07:12:50 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:12:50 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:12:50 localhost systemd[1]: Starting Fail2Ban Service...
+Dec 20 07:12:51 localhost fail2ban-client[20807]: 2018-12-20 08:12:51,106 fail2ban.server         [20808]: INFO    Starting Fail2ban v0.9.3
+Dec 20 07:12:51 localhost fail2ban-client[20807]: 2018-12-20 08:12:51,107 fail2ban.server         [20808]: INFO    Starting in daemon mode
+Dec 20 07:12:51 localhost systemd[1]: Started Fail2Ban Service.
+Dec 20 07:12:51 localhost systemd[1]: Reloading.
+Dec 20 07:12:51 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 20 07:12:51 localhost systemd[1]: Started ACPI event daemon.
+Dec 20 07:12:54 localhost systemd[1]: Stopping OpenBSD Secure Shell server...
+Dec 20 07:12:54 localhost systemd[1]: Stopped OpenBSD Secure Shell server.
+Dec 20 07:12:54 localhost systemd[1]: Starting OpenBSD Secure Shell server...
+Dec 20 07:12:54 localhost systemd[1]: Started OpenBSD Secure Shell server.
+Dec 20 07:16:59 localhost systemd[1]: Starting Cleanup of Temporary Directories...
+Dec 20 07:16:59 localhost systemd-tmpfiles[20873]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Dec 20 07:16:59 localhost systemd[1]: Started Cleanup of Temporary Directories.
+Dec 20 19:48:59 localhost systemd[1]: Starting Daily apt download activities...
+Dec 20 19:49:00 localhost systemd[1]: Started Daily apt download activities.
+Dec 21 05:11:59 localhost systemd[1]: Starting Daily apt upgrade and clean activities...
+Dec 21 05:12:00 localhost systemd[1]: Started Daily apt upgrade and clean activities.
+Dec 21 07:16:44 localhost systemd[1]: Reloading.
+Dec 21 07:16:44 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 21 07:16:44 localhost systemd[1]: Started ACPI event daemon.
+Dec 21 07:16:48 localhost systemd[1]: Reloading.
+Dec 21 07:16:48 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 21 07:16:48 localhost systemd[1]: Started ACPI event daemon.
+Dec 21 07:16:48 localhost systemd[1]: Reloading.
+Dec 21 07:16:48 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 21 07:16:48 localhost systemd[1]: Started ACPI event daemon.
+Dec 21 07:16:54 localhost systemd[1]: Reloading.
+Dec 21 07:16:54 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 21 07:16:54 localhost systemd[1]: Starting Daily apt download activities...
+Dec 21 07:16:54 localhost systemd[1]: Started ACPI event daemon.
+Dec 21 07:16:54 localhost systemd[1]: Started Daily apt download activities.
+Dec 21 07:17:16 localhost systemd[1]: Starting Cleanup of Temporary Directories...
+Dec 21 07:17:16 localhost systemd-tmpfiles[31039]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Dec 21 07:17:16 localhost systemd[1]: Started Cleanup of Temporary Directories.
+Dec 21 07:24:03 localhost systemd[1]: Reloading.
+Dec 21 07:24:03 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 21 07:24:03 localhost systemd[1]: Started ACPI event daemon.
+Dec 21 07:24:06 localhost systemd[1]: Reloading.
+Dec 21 07:24:06 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 21 07:24:06 localhost systemd[1]: Started ACPI event daemon.
+Dec 21 07:24:06 localhost systemd[1]: Reloading.
+Dec 21 07:24:06 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 21 07:24:06 localhost systemd[1]: Started ACPI event daemon.
+Dec 21 07:24:06 localhost systemd[1]: Reloading.
+Dec 21 07:24:06 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 21 07:24:06 localhost systemd[1]: Started ACPI event daemon.
+Dec 21 07:24:06 localhost systemd[1]: Starting LSB: Apache2 web server...
+Dec 21 07:24:06 localhost apache2[31923]:  * Starting Apache httpd web server apache2
+Dec 21 07:24:06 localhost apache2[31923]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 92.243.24.25. Set the 'ServerName' directive globally to suppress this message
+Dec 21 07:24:08 localhost apache2[31923]:  *
+Dec 21 07:24:08 localhost systemd[1]: Started LSB: Apache2 web server.
+Dec 21 07:24:08 localhost systemd[1]: Reloading.
+Dec 21 07:24:08 localhost systemd[1]: [/usr/share/gandi/systemd/gandi-postboot.service:15] Support for option SysVStartPriority= has been removed and it is ignored
+Dec 21 07:24:08 localhost systemd[1]: Started ACPI event daemon.
+Dec 22 04:01:50 localhost systemd[1]: Starting Daily apt download activities...
+Dec 22 04:01:52 localhost systemd[1]: Started Daily apt download activities.
+Dec 22 05:54:45 localhost systemd[1]: Starting Daily apt upgrade and clean activities...
+Dec 22 05:54:46 localhost systemd[1]: Started Daily apt upgrade and clean activities.
+Dec 22 07:17:52 localhost systemd[1]: Starting Cleanup of Temporary Directories...
+Dec 22 07:17:52 localhost systemd-tmpfiles[4543]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Dec 22 07:17:52 localhost systemd[1]: Started Cleanup of Temporary Directories.
+Dec 22 13:18:43 localhost systemd[1]: Starting Daily apt download activities...
+Dec 22 13:18:44 localhost systemd[1]: Started Daily apt download activities.
+Dec 22 20:36:31 localhost systemd[1]: Starting Daily apt download activities...
+Dec 22 20:36:32 localhost systemd[1]: Started Daily apt download activities.
+Dec 23 05:32:50 localhost systemd[1]: Starting Daily apt upgrade and clean activities...
+Dec 23 05:32:50 localhost systemd[1]: Started Daily apt upgrade and clean activities.
+Dec 23 05:48:45 localhost systemd[1]: Starting Daily apt download activities...
+Dec 23 05:48:46 localhost systemd[1]: Started Daily apt download activities.
+Dec 23 07:17:59 localhost systemd[1]: Starting Cleanup of Temporary Directories...
+Dec 23 07:17:59 localhost systemd-tmpfiles[16528]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Dec 23 07:17:59 localhost systemd[1]: Started Cleanup of Temporary Directories.
+Dec 24 00:52:31 localhost systemd[1]: Starting Daily apt download activities...
+Dec 24 00:52:32 localhost systemd[1]: Started Daily apt download activities.
+Dec 24 05:45:33 localhost systemd[1]: Starting Daily apt upgrade and clean activities...
+Dec 24 05:45:34 localhost systemd[1]: Started Daily apt upgrade and clean activities.
+Dec 24 07:07:29 localhost systemd[1]: Starting Daily apt download activities...
+Dec 24 07:07:29 localhost systemd[1]: Started Daily apt download activities.
+Dec 24 07:18:03 localhost systemd[1]: Starting Cleanup of Temporary Directories...
+Dec 24 07:18:03 localhost systemd-tmpfiles[29160]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Dec 24 07:18:03 localhost systemd[1]: Started Cleanup of Temporary Directories.
+Dec 25 01:44:14 localhost systemd[1]: Starting Daily apt download activities...
+Dec 25 01:44:14 localhost systemd[1]: Started Daily apt download activities.
+Dec 25 05:07:35 localhost systemd[1]: Starting Daily apt upgrade and clean activities...
+Dec 25 05:07:36 localhost systemd[1]: Started Daily apt upgrade and clean activities.
+Dec 25 07:18:04 localhost systemd[1]: Starting Cleanup of Temporary Directories...
+Dec 25 07:18:04 localhost systemd-tmpfiles[6618]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Dec 25 07:18:04 localhost systemd[1]: Started Cleanup of Temporary Directories.
+Dec 25 08:04:56 localhost systemd[1]: Starting Daily apt download activities...
+Dec 25 08:04:57 localhost systemd[1]: Started Daily apt download activities.
+Dec 26 01:18:10 localhost systemd[1]: Starting Daily apt download activities...
+Dec 26 01:18:11 localhost systemd[1]: Started Daily apt download activities.
+Dec 26 05:59:38 localhost systemd[1]: Starting Daily apt upgrade and clean activities...
+Dec 26 05:59:38 localhost systemd[1]: Started Daily apt upgrade and clean activities.
+Dec 26 07:18:09 localhost systemd[1]: Starting Cleanup of Temporary Directories...
+Dec 26 07:18:09 localhost systemd-tmpfiles[17385]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Dec 26 07:18:09 localhost systemd[1]: Started Cleanup of Temporary Directories.
+Dec 26 08:04:14 localhost systemd[1]: Starting Daily apt download activities...
+Dec 26 08:04:14 localhost systemd[1]: Started Daily apt download activities.
+Dec 27 02:54:24 localhost systemd-timesyncd[7765]: Timed out waiting for reply from [2001:67c:1560:8003::c7]:123 (ntp.ubuntu.com).
+Dec 27 02:54:24 localhost systemd-timesyncd[7765]: Synchronized to time server [2001:67c:1560:8003::c8]:123 (ntp.ubuntu.com).
+Dec 27 04:41:35 localhost systemd[1]: Starting Daily apt download activities...
+Dec 27 04:41:36 localhost systemd[1]: Started Daily apt download activities.
+Dec 27 05:31:24 localhost systemd[1]: Starting Daily apt upgrade and clean activities...
+Dec 27 05:31:24 localhost systemd[1]: Started Daily apt upgrade and clean activities.
+Dec 27 07:18:14 localhost systemd[1]: Starting Cleanup of Temporary Directories...
+Dec 27 07:18:14 localhost systemd-tmpfiles[2893]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Dec 27 07:18:14 localhost systemd[1]: Started Cleanup of Temporary Directories.
+Dec 27 16:40:40 localhost systemd[1]: Starting Daily apt download activities...
+Dec 27 16:40:41 localhost systemd[1]: Started Daily apt download activities.
+Dec 28 03:57:14 localhost systemd[1]: Starting Daily apt download activities...
+Dec 28 03:57:14 localhost systemd[1]: Started Daily apt download activities.
+Dec 28 05:46:51 localhost systemd[1]: Starting Daily apt upgrade and clean activities...
+Dec 28 05:46:51 localhost systemd[1]: Started Daily apt upgrade and clean activities.
+Dec 28 07:18:16 localhost systemd[1]: Starting Cleanup of Temporary Directories...
+Dec 28 07:18:16 localhost systemd-tmpfiles[16554]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Dec 28 07:18:16 localhost systemd[1]: Started Cleanup of Temporary Directories.
+Dec 28 16:48:20 localhost systemd[1]: Starting Daily apt download activities...
+Dec 28 16:48:20 localhost systemd[1]: Started Daily apt download activities.
+Dec 28 18:20:59 localhost systemd[1]: Starting Daily apt download activities...
+Dec 28 18:21:00 localhost systemd[1]: Started Daily apt download activities.
+Dec 29 05:49:14 localhost systemd[1]: Starting Daily apt upgrade and clean activities...
+Dec 29 05:49:15 localhost systemd[1]: Started Daily apt upgrade and clean activities.
+Dec 29 07:18:38 localhost systemd[1]: Starting Cleanup of Temporary Directories...
+Dec 29 07:18:38 localhost systemd-tmpfiles[28044]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Dec 29 07:18:38 localhost systemd[1]: Started Cleanup of Temporary Directories.
+Dec 29 15:28:54 localhost systemd[1]: Starting Daily apt download activities...
+Dec 29 15:28:54 localhost systemd[1]: Started Daily apt download activities.
+Dec 29 20:00:08 localhost systemd[1]: Starting Daily apt download activities...
+Dec 29 20:00:08 localhost systemd[1]: Started Daily apt download activities.
+Dec 30 01:56:32 localhost systemd-timesyncd[7765]: Timed out waiting for reply from [2001:67c:1560:8003::c8]:123 (ntp.ubuntu.com).
+Dec 30 01:56:32 localhost systemd-timesyncd[7765]: Synchronized to time server 91.189.89.198:123 (ntp.ubuntu.com).
+Dec 30 05:18:58 localhost systemd[1]: Starting Daily apt upgrade and clean activities...
+Dec 30 05:18:59 localhost systemd[1]: Started Daily apt upgrade and clean activities.
+Dec 30 07:18:59 localhost systemd[1]: Starting Cleanup of Temporary Directories...
+Dec 30 07:18:59 localhost systemd-tmpfiles[5480]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Dec 30 07:18:59 localhost systemd[1]: Started Cleanup of Temporary Directories.
+Dec 30 11:20:17 localhost systemd[1]: Starting Daily apt download activities...
+Dec 30 11:20:17 localhost systemd[1]: Started Daily apt download activities.
+Dec 30 18:18:06 localhost systemd[1]: Starting Daily apt download activities...
+Dec 30 18:18:06 localhost systemd[1]: Started Daily apt download activities.
+Dec 31 05:10:21 localhost systemd[1]: Starting Daily apt upgrade and clean activities...
+Dec 31 05:10:22 localhost systemd[1]: Started Daily apt upgrade and clean activities.
+Dec 31 07:19:10 localhost systemd[1]: Starting Cleanup of Temporary Directories...
+Dec 31 07:19:11 localhost systemd-tmpfiles[17946]: [/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.
+Dec 31 07:19:11 localhost systemd[1]: Started Cleanup of Temporary Directories.
+Dec 31 12:35:59 localhost systemd[1]: Starting Daily apt download activities...
+Dec 31 12:36:00 localhost systemd[1]: Started Daily apt download activities.
+Dec 31 17:47:57 localhost systemd[1]: Starting Daily apt download activities...
+Dec 31 17:47:57 localhost systemd[1]: Started Daily apt download activities.
+Dec 31 23:47:13 localhost systemd[1]: proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 22650 (sftp-server)
+Dec 31 23:47:13 localhost systemd[1]: Mounting Arbitrary Executable File Formats File System...
+Dec 31 23:47:14 localhost systemd[1]: Mounted Arbitrary Executable File Formats File System.
+Dec 31 23:47:14 localhost systemd-udevd[13607]: Network interface NamePolicy= disabled on kernel command line, ignoring.

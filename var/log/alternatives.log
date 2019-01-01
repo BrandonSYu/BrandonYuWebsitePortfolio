@@ -1,0 +1,25 @@
+update-alternatives 2018-12-20 08:10:30: run with --install /usr/bin/pager pager /bin/more 50 --slave /usr/share/man/man1/pager.1.gz pager.1.gz /usr/share/man/man1/more.1.gz
+update-alternatives 2018-12-20 08:10:30: run with --install /usr/bin/pager pager /usr/bin/pg 10 --slave /usr/share/man/man1/pager.1.gz pager.1.gz /usr/share/man/man1/pg.1.gz
+update-alternatives 2018-12-20 08:11:34: run with --install /usr/bin/rename rename /usr/bin/prename 60 --slave /usr/share/man/man1/rename.1.gz rename.1.gz /usr/share/man/man1/prename.1.gz
+update-alternatives 2018-12-20 08:11:37: run with --install /usr/bin/w w /usr/bin/w.procps 50 --slave /usr/share/man/man1/w.1.gz w.1.gz /usr/share/man/man1/w.procps.1.gz
+update-alternatives 2018-12-20 08:11:48: run with --install /etc/vtrgb vtrgb /etc/console-setup/vtrgb 50
+update-alternatives 2018-12-20 08:11:48: run with --install /etc/vtrgb vtrgb /etc/console-setup/vtrgb.vga 20
+update-alternatives 2018-12-20 08:11:55: run with --quiet --remove rlogin /usr/bin/ssh
+update-alternatives 2018-12-20 08:11:55: run with --quiet --remove rcp /usr/bin/ssh
+update-alternatives 2018-12-21 08:16:52: run with --force --install /etc/ld.so.conf.d/x86_64-linux-gnu_EGL.conf x86_64-linux-gnu_egl_conf /usr/lib/x86_64-linux-gnu/mesa-egl/ld.so.conf 500
+update-alternatives 2018-12-21 08:16:52: link group x86_64-linux-gnu_egl_conf updated to point to /usr/lib/x86_64-linux-gnu/mesa-egl/ld.so.conf
+update-alternatives 2018-12-21 08:16:52: run with --install /usr/bin/ctags ctags /usr/bin/ctags.emacs24 27 --slave /usr/share/man/man1/ctags.1.gz ctags.1.gz /usr/share/man/man1/ctags.emacs24.1.gz
+update-alternatives 2018-12-21 08:16:52: link group ctags updated to point to /usr/bin/ctags.emacs24
+update-alternatives 2018-12-21 08:16:52: run with --install /usr/bin/ebrowse ebrowse /usr/bin/ebrowse.emacs24 27 --slave /usr/share/man/man1/ebrowse.1.gz ebrowse.1.gz /usr/share/man/man1/ebrowse.emacs24.1.gz
+update-alternatives 2018-12-21 08:16:52: link group ebrowse updated to point to /usr/bin/ebrowse.emacs24
+update-alternatives 2018-12-21 08:16:52: run with --install /usr/bin/emacsclient emacsclient /usr/bin/emacsclient.emacs24 27 --slave /usr/share/man/man1/emacsclient.1.gz emacsclient.1.gz /usr/share/man/man1/emacsclient.emacs24.1.gz
+update-alternatives 2018-12-21 08:16:52: link group emacsclient updated to point to /usr/bin/emacsclient.emacs24
+update-alternatives 2018-12-21 08:16:52: run with --install /usr/bin/etags etags /usr/bin/etags.emacs24 27 --slave /usr/share/man/man1/etags.1.gz etags.1.gz /usr/share/man/man1/etags.emacs24.1.gz
+update-alternatives 2018-12-21 08:16:52: link group etags updated to point to /usr/bin/etags.emacs24
+update-alternatives 2018-12-21 08:16:52: run with --install /usr/bin/grep-changelog grep-changelog /usr/bin/grep-changelog.emacs24 27 --slave /usr/share/man/man1/grep-changelog.1.gz grep-changelog.1.gz /usr/share/man/man1/grep-changelog.emacs24.1.gz
+update-alternatives 2018-12-21 08:16:52: link group grep-changelog updated to point to /usr/bin/grep-changelog.emacs24
+update-alternatives 2018-12-21 08:16:53: run with --install /usr/bin/emacs emacs /usr/bin/emacs24-x 27 --slave /usr/share/man/man1/emacs.1.gz emacs.1.gz /usr/share/man/man1/emacs.emacs24.1.gz --slave /usr/share/icons/hicolor/scalable/apps/emacs.svg emacs.svg /usr/share/icons/hicolor/scalable/apps/emacs24.svg --slave /usr/share/icons/hicolor/scalable/mimetypes/emacs-document.svg emacs-document.svg /usr/share/icons/hicolor/scalable/mimetypes/emacs24-document.svg --slave /usr/share/icons/hicolor/16x16/apps/emacs.png emacs-16x16.png /usr/share/icons/hicolor/16x16/apps/emacs24.png --slave /usr/share/icons/hicolor/24x24/apps/emacs.png emacs-24x24.png /usr/share/icons/hicolor/24x24/apps/emacs24.png --slave /usr/share/icons/hicolor/32x32/apps/emacs.png emacs-32x32.png /usr/share/icons/hicolor/32x32/apps/emacs24.png --slave /usr/share/icons/hicolor/48x48/apps/emacs.png emacs-48x48.png /usr/share/icons/hicolor/48x48/apps/emacs24.png --slave /usr/share/icons/hicolor/128x128/apps/emacs.png emacs-128x128.png /usr/share/icons/hicolor/128x128/apps/emacs24.png
+update-alternatives 2018-12-21 08:16:53: link group emacs updated to point to /usr/bin/emacs24-x
+update-alternatives 2018-12-21 08:16:53: run with --install /usr/bin/editor editor /usr/bin/emacs24 0 --slave /usr/share/man/man1/editor.1.gz editor.1.gz /usr/share/man/man1/emacs.emacs24.1.gz
+update-alternatives 2018-12-21 08:16:54: run with --install /usr/share/icons/default/index.theme x-cursor-theme /usr/share/icons/Adwaita/cursor.theme 90
+update-alternatives 2018-12-21 08:16:54: link group x-cursor-theme updated to point to /usr/share/icons/Adwaita/cursor.theme
